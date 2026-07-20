@@ -2,8 +2,59 @@ import { Building2, Award, Users, Target } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function About() {
+    const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 60,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
+};
+
+const fadeLeft = {
+  hidden: {
+    opacity: 0,
+    x: -80,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
+const fadeRight = {
+  hidden: {
+    opacity: 0,
+    x: 80,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
+const stagger = {
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
   return (
     <main className="bg-stone-50">
         <Navbar />
@@ -17,8 +68,8 @@ export default function About() {
 
         <div className="absolute inset-0 bg-black/55" />
 
-        <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
-          <div className="max-w-3xl">
+        <div className="relative z-10 flex h-full items-center justify-center px-6 text-center" initial="hidden" animate="visible" variants={stagger}>
+          <motion.div className="max-w-3xl " variants={fadeUp}>
             <p className="uppercase tracking-[0.35em] text-amber-400 text-sm">
               About Us
             </p>
@@ -34,14 +85,19 @@ export default function About() {
               exceptional properties while delivering a professional,
               transparent and personalized real estate experience.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Company Story */}
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid gap-16 lg:grid-cols-2 items-center">
-          <div>
+            <motion.div
+    variants={fadeLeft}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+  >
             <p className="uppercase tracking-[0.3em] text-amber-600 text-sm">
               Our Story
             </p>
@@ -62,8 +118,13 @@ export default function About() {
               client-first approach to deliver exceptional service from the
               first consultation to the final transaction.
             </p>
-          </div>
-
+          </motion.div>
+<motion.div
+  variants={fadeRight}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+>
           <div>
             <img
               src="https://images.pexels.com/photos/7578860/pexels-photo-7578860.jpeg?auto=compress&cs=tinysrgb&w=1200"
@@ -71,6 +132,7 @@ export default function About() {
               className="rounded-3xl shadow-xl"
             />
           </div>
+          </motion.div>
         </div>
       </section>
 

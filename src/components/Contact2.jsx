@@ -323,64 +323,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="bg-stone-100 py-24">
-        <div className="mx-auto max-w-7xl px-6">
 
-          <div className="text-center">
-            <p className="uppercase tracking-[0.3em] text-yellow-600">
-              Why Choose Us
-            </p>
-
-            <h2 className="mt-4 text-4xl font-light">
-              Real Estate Experts
-            </h2>
-          </div>
-
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
-
-            <div className="rounded-2xl bg-white p-10 text-center shadow">
-              <ShieldCheck className="mx-auto h-12 w-12 text-yellow-600" />
-
-              <h3 className="mt-6 text-xl font-semibold">
-                Trusted Company
-              </h3>
-
-              <p className="mt-4 text-gray-600">
-                Years of experience helping clients buy and sell premium
-                properties.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-10 text-center shadow">
-              <Building2 className="mx-auto h-12 w-12 text-yellow-600" />
-
-              <h3 className="mt-6 text-xl font-semibold">
-                Premium Listings
-              </h3>
-
-              <p className="mt-4 text-gray-600">
-                Exclusive luxury homes and investment opportunities across
-                Kenya.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-10 text-center shadow">
-              <Headphones className="mx-auto h-12 w-12 text-yellow-600" />
-
-              <h3 className="mt-6 text-xl font-semibold">
-                Dedicated Support
-              </h3>
-
-              <p className="mt-4 text-gray-600">
-                Our consultants are always ready to guide you through every
-                step of your property journey.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </>
