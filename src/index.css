@@ -1,13 +1,160 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  --gold: #b8945f;
+  --gold-light: #d4b896;
+  --gold-glow: rgba(184, 148, 95, 0.25);
+  --cream: #faf7f2;
+  --warm-white: #fcfaf7;
+  --charcoal: #1a1a1a;
+  --soft-black: #2d2d2d;
+  --muted: #7a7068;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Raleway", sans-serif;
+  background: var(--warm-white);
+  color: var(--charcoal);
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll-triggered fade-in, toggled via IntersectionObserver in App.jsx */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-transition {
+  background: linear-gradient(to bottom, var(--warm-white), var(--cream));
+}
+.section-transition-dark {
+  background: linear-gradient(to bottom, var(--cream), var(--charcoal));
+}
+
+.nav-link {
+  position: relative;
+  letter-spacing: 0.15em;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition:
+    width 0.4s ease,
+    left 0.4s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.hero-parallax {
+  transition: transform 0.1s ease-out;
+}
+
+.gold-line {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.prop-card {
+  cursor: pointer;
+  transition:
+    transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.6s ease;
+}
+.prop-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+}
+
+/* Property detail overlay */
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  background: var(--warm-white);
+}
+.detail-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition:
+    opacity 0.8s ease 0.2s,
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+.slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition:
+    opacity 0.8s ease 0.3s,
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+}
+.slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease 0.4s,
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s;
+}
+.slide-down {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition:
+    opacity 0.8s ease 0.1s,
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+}
+.detail-overlay.active .slide-left,
+.detail-overlay.active .slide-right,
+.detail-overlay.active .slide-up,
+.detail-overlay.active .slide-down {
+  opacity: 1;
+  transform: translate(0);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 20px var(--gold-glow);
+}
+
+.geo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+}
+@media (max-width: 768px) {
+  .geo-grid {
+    grid-template-columns: 1fr;
+  }
 }
