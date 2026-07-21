@@ -69,14 +69,35 @@ to="/about" className="nav-link">About</Link>
 
 {menuOpen && (
   <div className="md:hidden px-6 pb-4 flex flex-col gap-3">
-    <a href="#hero" onClick={() => setMenuOpen(false)}>Home</a>
-
-    <a href="#properties" onClick={() => setMenuOpen(false)}>Properties</a>
-
-    <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+    <Link
+      to="/"
+      onClick={() => setMenuOpen(false)}
+      className="text-sm font-light"
+      style={{ color: "var(--charcoal)" }}
+    >
+      Home
+    </Link>
 
     <Link
-      to="/contact2"
+      to="/properties"
+      onClick={() => setMenuOpen(false)}
+      className="text-sm font-light"
+      style={{ color: "var(--charcoal)" }}
+    >
+      Properties
+    </Link>
+
+    <Link
+      to="/about"
+      onClick={() => setMenuOpen(false)}
+      className="text-sm font-light"
+      style={{ color: "var(--charcoal)" }}
+    >
+      About
+    </Link>
+
+    <Link
+      to="/contact"
       onClick={() => setMenuOpen(false)}
       className="text-sm font-light"
       style={{ color: "var(--charcoal)" }}
