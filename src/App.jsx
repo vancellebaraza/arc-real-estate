@@ -13,19 +13,30 @@ export default function App() {
 
   // Scroll-triggered fade-in, equivalent to the original vanilla-JS
   // IntersectionObserver that watched every .fade-in element.
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("visible");
-        });
-      },
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
 
+useEffect(() => {
+  const elements = document.querySelectorAll(
+    ".fade-in, .slide-up, .slide-left, .slide-right"
+  );
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // animate only once
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
   // Lock body scroll while a property detail overlay is open.
   useEffect(() => {
     document.body.style.overflow = selectedIdx !== null ? "hidden" : "";

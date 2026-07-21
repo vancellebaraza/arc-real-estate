@@ -8,7 +8,7 @@ export default function Properties({ properties, onSelect }) {
       style={{ background: "var(--cream)" }}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center fade-in">
+        <div className="text-center slide-up">
           <div className="gold-line mx-auto mb-4" />
           <h2
             className="font-display text-3xl md:text-5xl font-light"
@@ -25,13 +25,20 @@ export default function Properties({ properties, onSelect }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
-          {properties.map((property, idx) => (
-            <PropertyCard
-              key={property.id}
-              property={property}
-              onClick={() => onSelect(idx)}
-            />
-          ))}
+{properties.map((property, idx) => (
+  <div
+    key={property.id}
+    className="slide-up"
+    style={{
+      transitionDelay: `${idx * 150}ms`,
+    }}
+  >
+    <PropertyCard
+      property={property}
+      onClick={() => onSelect(idx)}
+    />
+  </div>
+))}
         </div>
       </div>
     </section>
