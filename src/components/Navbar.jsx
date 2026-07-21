@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../assets/homelogo.png";
 
 // const LINKS = [
 //   { href: "#hero", label: "Home" },
@@ -21,13 +22,21 @@ export default function Navbar() {
       }}
     >
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-        <h1
-          className="font-display text-2xl font-semibold tracking-wide"
-          style={{ color: "var(--charcoal)" }}
-        >
-          Real Arc Estate
-        </h1>
+       
+<div className="flex items-center gap-3">
+  <img
+    src={logo}
+    alt="Real Arc Estate Logo"
+    className="h-18 w-auto object-contain transition-transform duration-300 hover:scale-105"
+  />
 
+  <h1
+    className="font-display text-2xl font-semibold tracking-wide"
+    style={{ color: "var(--charcoal)" }}
+  >
+    Real Arc Estate
+  </h1>
+</div>
         <div className="hidden md:flex gap-10">
 <div className="hidden md:flex gap-10">
 <Link to="/" className="nav-link">

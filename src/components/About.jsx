@@ -15,7 +15,7 @@ export default function About() {
       style={{ background: "var(--warm-white)" }}
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        <div className="fade-in">
+        <div className="slide-left">
           <img
             src={ABOUT_IMAGE}
             alt="Real Arc Estate office"
@@ -24,7 +24,7 @@ export default function About() {
           />
         </div>
 
-        <div className="fade-in">
+        <div className="slide-right">
           <div className="gold-line mb-5" />
           <h2
             className="font-display text-3xl md:text-4xl font-light"
@@ -43,8 +43,8 @@ export default function About() {
           </p>
 
           <div className="mt-8 flex gap-10">
-            {STATS.map((stat) => (
-              <div key={stat.label}>
+            {STATS.map((stat,index) => (
+              <div key={stat.label}  className="slide-up" style={{transitionDelay: `${index * 150}ms`,}}>
                 <p
                   className="font-display text-3xl font-medium"
                   style={{ color: "var(--gold)" }}

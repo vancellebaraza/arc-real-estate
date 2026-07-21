@@ -177,4 +177,60 @@ textarea:focus {
   transform: translateY(0);
 }
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease forwards;
+}
+/* Initial States */
+
+.fade-in,
+.slide-up,
+.slide-left,
+.slide-right {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+/* Fade */
+
+.fade-in {
+  transform: translateY(20px);
+}
+
+/* Slide Up */
+
+.slide-up {
+  transform: translateY(80px);
+}
+
+/* Slide Left */
+
+.slide-left {
+  transform: translateX(-80px);
+}
+
+/* Slide Right */
+
+.slide-right {
+  transform: translateX(80px);
+}
+
+/* Visible */
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 

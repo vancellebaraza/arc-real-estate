@@ -68,39 +68,59 @@ export default function Hero() {
       className="relative h-screen overflow-hidden"
     >
       {/* Background Image */}
+{/* Background Images */}
+<div
+  ref={parallaxRef}
+  className="absolute inset-0 overflow-hidden"
+>
+  <div
+    className="flex h-full transition-transform duration-1000 ease-in-out"
+    style={{
+      width: `${slides.length * 100}%`,
+      transform: `translateX(-${current * (100 / slides.length)}%)`,
+    }}
+  >
+    {slides.map((slide, index) => (
       <div
-        ref={parallaxRef}
-        className="absolute inset-0 transition-all duration-700"
+        key={index}
+        className="h-full w-full flex-shrink-0"
+        style={{ width: `${100 / slides.length}%` }}
       >
         <img
-          src={slides[current].image}
-          alt={slides[current].title}
+          src={slide.image}
+          alt={slide.title}
           className="h-full w-full object-cover"
         />
       </div>
+    ))}
+  </div>
+</div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/45" />
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-        <div className="gold-line mb-6" />
+<div
+  key={current}
+  className="animate-slide-up relative z-10 flex h-full flex-col items-center justify-center px-6 text-center animate-slide-up"
+>
+  <div className="gold-line mb-6" />
 
-        <h2 className="max-w-4xl text-4xl font-light text-white transition-all duration-500 md:text-6xl lg:text-7xl">
-          {slides[current].title}
-        </h2>
+  <h2 className=" max-w-4xl text-4xl font-light text-white md:text-6xl lg:text-7xl">
+    {slides[current].title}
+  </h2>
 
-        <p className="mt-6 max-w-2xl text-lg text-white/80 transition-all duration-500">
-          {slides[current].description}
-        </p>
+  <p className=" mt-6 max-w-2xl text-lg text-white/80">
+    {slides[current].description}
+  </p>
 
-        <a
-          href="#properties"
-          className="mt-10 border border-yellow-400 px-8 py-3 text-xs uppercase tracking-[0.3em] text-yellow-300 transition hover:bg-yellow-400 hover:text-black"
-        >
-          {slides[current].button}
-        </a>
-      </div>
+  <a
+    href="#properties"
+    className=" mt-10 border border-yellow-400 px-8 py-3 text-xs uppercase tracking-[0.3em] text-yellow-300 transition hover:bg-yellow-400 hover:text-black"
+  >
+    {slides[current].button}
+  </a>
+</div>
 
       {/* Left Arrow */}
       <button
