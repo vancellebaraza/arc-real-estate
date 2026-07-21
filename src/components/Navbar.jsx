@@ -34,14 +34,12 @@ export default function Navbar() {
     Home
   </Link>
 
-  <a href="#properties" className="nav-link">
-    Properties
-  </a>
+<Link to="/properties" className="nav-link">Properties</Link>
 
 <Link 
 to="/about" className="nav-link">About</Link>
 
-  <Link to="/contact2" className="nav-link">
+  <Link to="/contact" className="nav-link">
     Contact
   </Link>
 </div>

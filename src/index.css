@@ -158,3 +158,23 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(252, 250, 247, 0.98);
+  overflow-y: auto;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: all 0.4s ease;
+}
+
+.detail-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
