@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const LINKS = [
-  { href: "#hero", label: "Home" },
-  { href: "#properties", label: "Properties" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
-];
+// const LINKS = [
+//   { href: "#hero", label: "Home" },
+//   { href: "#properties", label: "Properties" },
+//   { href: "#about", label: "About" },
+//   { href: "#contact", label: "Contact" },
+// ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,16 +29,20 @@ export default function Navbar() {
         </h1>
 
         <div className="hidden md:flex gap-10">
-          {LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="nav-link text-xs uppercase"
-              style={{ color: "var(--muted)" }}
-            >
-              {link.label}
-            </a>
-          ))}
+<div className="hidden md:flex gap-10">
+<Link to="/" className="nav-link">
+    Home
+  </Link>
+
+<Link to="/properties" className="nav-link">Properties</Link>
+
+<Link 
+to="/about" className="nav-link">About</Link>
+
+  <Link to="/contact" className="nav-link">
+    Contact
+  </Link>
+</div>
         </div>
 
         <button
@@ -53,21 +58,24 @@ export default function Navbar() {
         </button>
       </div>
 
-      {menuOpen && (
-        <div className="md:hidden px-6 pb-4 flex flex-col gap-3">
-          {LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-light"
-              style={{ color: "var(--charcoal)" }}
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
-      )}
+{menuOpen && (
+  <div className="md:hidden px-6 pb-4 flex flex-col gap-3">
+    <a href="#hero" onClick={() => setMenuOpen(false)}>Home</a>
+
+    <a href="#properties" onClick={() => setMenuOpen(false)}>Properties</a>
+
+    <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+
+    <Link
+      to="/contact2"
+      onClick={() => setMenuOpen(false)}
+      className="text-sm font-light"
+      style={{ color: "var(--charcoal)" }}
+    >
+      Contact
+    </Link>
+  </div>
+)}
     </nav>
   );
 }

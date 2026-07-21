@@ -34,7 +34,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero properties={properties}/>
 
       <div className="w-full h-24 section-transition" />
 
