@@ -139,7 +139,7 @@ export default function Contact() {
       </p>
 
       <h2 className="mt-3 text-4xl font-semibold text-slate-900">
-        Follow Real Arc Estates
+        Follow ARK Real Estates
       </h2>
 
       <p className="mx-auto mt-4 max-w-2xl text-slate-600">

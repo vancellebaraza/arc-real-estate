@@ -59,7 +59,7 @@ export default function Footer() {
           className="text-xs font-light"
           style={{ color: "rgba(255,255,255,0.4)" }}
         >
-          © 2026 Real Arc Estate Company. All rights reserved.
+          © 2026 ARK Real Estate Company. All rights reserved.
         </p>
         <div className="flex gap-5">
           {socialIcons.map((icon) => (

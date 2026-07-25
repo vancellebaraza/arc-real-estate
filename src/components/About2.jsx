@@ -81,7 +81,7 @@ const stagger = {
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-white/80">
-              Real Arc Estates is dedicated to connecting clients with
+              ARK Real Estates is dedicated to connecting clients with
               exceptional properties while delivering a professional,
               transparent and personalized real estate experience.
             </p>
@@ -107,7 +107,7 @@ const stagger = {
             </h2>
 
             <p className="mt-6 text-slate-600 leading-8">
-              At Real Arc Estates, we believe every property tells a story.
+              At ARK Real Estates, we believe every property tells a story.
               Whether you're searching for your dream home, an investment
               opportunity, or commercial space, our mission is to help you make
               confident real estate decisions.

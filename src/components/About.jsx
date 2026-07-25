@@ -35,7 +35,7 @@ export default function About() {
             className="mt-5 leading-relaxed font-light"
             style={{ color: "var(--muted)" }}
           >
-            Real Arc Estate is a premier luxury property consultancy
+            ARK Real Estate is a premier luxury property consultancy
             connecting discerning buyers with extraordinary residences. Our
             team provides white-glove service from first viewing to final
             key.
