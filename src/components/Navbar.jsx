@@ -34,7 +34,7 @@ export default function Navbar() {
     className="font-display text-2xl font-semibold tracking-wide"
     style={{ color: "var(--charcoal)" }}
   >
-    Real Arc Estate
+    ARK Real Estate
   </h1>
 </div>
         <div className="hidden md:flex gap-10">
