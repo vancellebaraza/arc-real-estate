@@ -147,9 +147,7 @@ const stagger = {
             </h3>
 
             <p className="mt-4 leading-8 text-white/80">
-              To provide reliable, transparent and innovative real estate
-              solutions while creating lasting relationships built on trust,
-              professionalism and integrity.
+             To provide professional high quality, prompt, reliable service with integrity while exceeding customer expectations in real estate services.
             </p>
           </div>
 
@@ -161,9 +159,9 @@ const stagger = {
             </h3>
 
             <p className="mt-4 leading-8">
-              To become Kenya's most trusted real estate company by delivering
-              outstanding property services and creating value for our clients
-              and communities.
+               To be the leading real estate company of choice in Kenya, that delivers exceptional customer experiences.
+
+
             </p>
           </div>
         </div>
@@ -216,7 +214,7 @@ const stagger = {
             <p className="mt-3 text-slate-600">
               We believe honesty and transparency are the foundation of every
               successful relationship.
-            </p>
+            </p> 
           </div>
         </div>
       </section>
@@ -226,23 +224,18 @@ const stagger = {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-10 text-center md:grid-cols-4">
             <div>
-              <h2 className="text-5xl font-bold text-amber-400">500+</h2>
-              <p className="mt-3 text-white/70">Properties Listed</p>
+              <h2 className="text-5xl font-bold text-amber-400">  31B+</h2>
+              <p className="mt-3 text-white/70">Property Value</p>
             </div>
 
             <div>
-              <h2 className="text-5xl font-bold text-amber-400">350+</h2>
-              <p className="mt-3 text-white/70">Happy Clients</p>
+              <h2 className="text-5xl font-bold text-amber-400">100+</h2>
+              <p className="mt-3 text-white/70">Total Years of Experience</p>
             </div>
 
             <div>
-              <h2 className="text-5xl font-bold text-amber-400">10+</h2>
-              <p className="mt-3 text-white/70">Years Experience</p>
-            </div>
-
-            <div>
-              <h2 className="text-5xl font-bold text-amber-400">100%</h2>
-              <p className="mt-3 text-white/70">Professional Service</p>
+              <h2 className="text-5xl font-bold text-amber-400">8,000+</h2>
+              <p className="mt-3 text-white/70">No. of Units</p>
             </div>
           </div>
         </div>

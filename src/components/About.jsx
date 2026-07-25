@@ -1,10 +1,9 @@
-const ABOUT_IMAGE =
-  "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1280";
+import logo1 from "../assets/arkrealestate.jpg";
 
 const STATS = [
-  { num: "850+", label: "Properties Sold" },
-  { num: "KES 310B", label: "Total Value" },
-  { num: "21", label: "Years of Excellence" },
+  { num: "8,000+", label: "No. of Units" },
+  { num: "KES 31B", label: "Total Property Value" },
+  { num: "100+", label: "Combined Years of Experience" },
 ];
 
 export default function About() {
@@ -17,7 +16,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="slide-left">
           <img
-            src={ABOUT_IMAGE}
+            src={logo1}
             alt="Real Arc Estate office"
             className="w-full h-96 object-cover rounded-sm"
             loading="lazy"
@@ -30,7 +29,7 @@ export default function About() {
             className="font-display text-3xl md:text-4xl font-light"
             style={{ color: "var(--charcoal)" }}
           >
-            Crafting Legacies Since 2003
+            Crafting Legacies Since 2008
           </h2>
           <p
             className="mt-5 leading-relaxed font-light"
