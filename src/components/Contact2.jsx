@@ -122,6 +122,10 @@ export default function Contact() {
                 <br />
                 8:00 AM - 5:00 PM
               </p>
+              <p className="mt-3 text-gray-600">
+                Saturday <br/>
+                9:00 AM - 1:00 PM
+              </p>
             </div>
 
           </div>
@@ -147,7 +151,7 @@ export default function Contact() {
     <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
       {/* Facebook */}
       <a
-        href="https://facebook.com/"
+        href="https://www.facebook.com/Arkrealestatebychevis?_rdc=1&_rdr#"
         target="_blank"
         rel="noopener noreferrer"
         className="group rounded-2xl border bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-600 hover:shadow-xl"
@@ -167,7 +171,7 @@ export default function Contact() {
 
       {/* Instagram */}
       <a
-        href="https://instagram.com/"
+        href="https://www.instagram.com/ark_real_estates/"
         target="_blank"
         rel="noopener noreferrer"
         className="group rounded-2xl border bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-pink-500 hover:shadow-xl"
@@ -207,7 +211,7 @@ export default function Contact() {
 
       {/* X */}
       <a
-        href="https://x.com/"
+        href="https://x.com/ark_estates"
         target="_blank"
         rel="noopener noreferrer"
         className="group rounded-2xl border bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-black hover:shadow-xl"
@@ -227,7 +231,7 @@ export default function Contact() {
 
       {/* WhatsApp */}
       <a
-        href="https://wa.me/254700123456"
+        href="https://www.whatsapp.com/channel/0029Vb64ZTkI1rcfMhM4cD01"
         target="_blank"
         rel="noopener noreferrer"
         className="group rounded-2xl border bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-green-600 hover:shadow-xl"

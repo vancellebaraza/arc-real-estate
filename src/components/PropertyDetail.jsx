@@ -125,13 +125,20 @@ export default function PropertyDetail({
           {/* Description */}
           <div className="mt-14 rounded-3xl bg-white p-10 shadow">
 
-            <h2 className="text-3xl font-semibold">
+            <h2 className="mb-4 text-3xl font-semibold">
               Property Overview
             </h2>
 
-            <p className="mt-6 leading-8 text-slate-600">
-              {property.detail.desc}
-            </p>
+            <div className="space-y-6">
+  {property.detail.desc.split("\n\n").map((paragraph, index) => (
+    <p
+      key={index}
+      className="leading-8 text-slate-600"
+    >
+      {paragraph}
+    </p>
+  ))}
+</div>
 
           </div>
 
@@ -142,7 +149,7 @@ export default function PropertyDetail({
               Gallery
             </h2>
 
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-6 grid-cols-2 ">
 
               {property.detail.images.map((image) => (
 
@@ -151,7 +158,7 @@ export default function PropertyDetail({
                   src={image}
                   alt={property.title}
                   onClick={() => setActiveImage(image)}
-                  className={`h-56 w-full cursor-pointer rounded-2xl object-cover transition duration-300 hover:scale-105 ${
+                  className={`h-80 w-full cursor-pointer rounded-2xl object-cover transition duration-300 hover:scale-105 ${
                     activeImage === image
                       ? "ring-4 ring-amber-500"
                       : ""
