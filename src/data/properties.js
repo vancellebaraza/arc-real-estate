@@ -12,6 +12,36 @@ import cb0 from "../assets/CITYBLUE/img1.jpeg";
 import cb1 from "../assets/CITYBLUE/img2.jpeg";
 import cb2 from "../assets/CITYBLUE/img3.jpeg";
 
+import i0 from "../assets/IVYPARK/img1.jpeg";
+import i1 from "../assets/IVYPARK/img2.jpeg";
+import i2 from "../assets/IVYPARK/img3.jpeg";
+import i3 from "../assets/IVYPARK/img4.jpeg";
+
+import r0 from "../assets/RIVERSIDE/img1.jpeg";
+import r1 from "../assets/RIVERSIDE/img2.jpeg";
+import r2 from "../assets/RIVERSIDE/img3.jpeg";
+import r3 from "../assets/RIVERSIDE/img4.jpeg";
+
+import p0 from "../assets/PINEBROOK/img1.jpeg";
+import p1 from "../assets/PINEBROOK/img2.jpeg";
+
+import m0 from "../assets/MARAGROOVE/img1.jpeg";
+import m1 from "../assets/MARAGROOVE/img2.jpeg";
+import m2 from "../assets/MARAGROOVE/img3.jpeg";
+import m3 from "../assets/MARAGROOVE/img4.jpeg";
+
+import l0 from "../assets/LUKENYA/img1.jpeg";
+import l1 from "../assets/LUKENYA/img2.jpeg";
+import l2 from "../assets/LUKENYA/img3.jpeg";
+import l3 from "../assets/LUKENYA/img4.jpeg";
+import l4 from "../assets/LUKENYA/img5.jpeg";
+
+import mh0 from "../assets/MANGOHAVEN/img1.jpeg";
+import mh1 from "../assets/MANGOHAVEN/img2.jpeg";
+import mh2 from "../assets/MANGOHAVEN/img3.jpeg";
+import mh3 from "../assets/MANGOHAVEN/img4.jpeg";
+
+
 
 export const properties = [
   {
@@ -113,23 +143,225 @@ The two-bedroom apartments at Divide Residences by CityBlue redefine modern fami
   },
   {
     id: 4,
-    title: "Skyline Residence",
+    title: "IVY Park Residencies",
     location:"Kilimani, Nairobi",
     bedrooms:9,
     area:"1,200 m²",
     bathrooms:6,
-    shortDesc: "Floor-to-ceiling glass frames an ever-changing urban canvas.",
+    shortDesc: "Discover a new standard of sophisticated urban living with the 1-bedroom apartments at Ivy Park, Kileleshwa.",
     price: "KES 470,000,000",
     image:
-      "https://images.unsplash.com/photo-1702411200201-3061d0eea802?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      i0,
     detail: {
       desc:
-        "Floor-to-ceiling glass frames Nairobi's ever-changing skyline. A modern sanctuary with spa bathroom, private lounge, and panoramic views.",
+        `IVY PARK RESIDENCES
+
+ELEGANT 1 BEDROOM UNITS
+
+Discover a new standard of sophisticated urban living with the 1-bedroom apartments at Ivy Park, Kileleshwa. Offering versatile sizes of 62 SQM, 67 SQM, 73 SQM, and 76 SQM, these units are priced from 6.82M to 8.74M for cash buyers, and 7.32M to 9.24M on flexible installment plans. Each layout is masterfully designed to optimize space, featuring a remarkably spacious living room area and a modern kitchen, an elegant lounge area for unwinding, a fully ensuite bedroom that serves as a private sanctuary, a cozy dining area, and a dedicated study area perfect for remote work.
+
+CONTEMPORARY 2 BEDROOM UNITS
+
+Upgrade to a sleek, contemporary lifestyle with the dynamic 2-bedroom options at Ivy Park, tailored to your space needs with options of 108 SQM, 110 SQM, 114 SQM, 115 SQM, and 128 SQM. Pricing options range from a competitive 10.78M to 14.72M for cash and 11.28M to 15.22M for installment buyers. Enjoy bright, airy interiors highlighted by a spacious living room area and kitchen, an elegant lounge area for entertaining, plush ensuite bedrooms, a seamless dining area, and a functional study area.
+
+
+
+MODERN 3 BEDROOM UNITS
+
+The 3-bedroom layouts at Ivy Park represent a prime investment vehicle for discerning buyers targeting the upscale family market, offering a generous 142 SQM floor plan. Positioned at 15.62M to 16.33M for cash buyers and 16.12M to 16.83M for installment terms, this layout provides a commanding presence. It maximizes tenant appeal by featuring exceptionally spacious living room areas and kitchens, an elegant lounge area, fully ensuite bedrooms, an upscale dining area, and a private study area.`,
       images: [
-        "https://images.unsplash.com/photo-1702411200201-3061d0eea802?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1587500892601-9d1ebfaa05be?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1631048649005-11e4fdd8e95d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1630142346469-e1628a29bd24?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        i0,
+        i1,
+        i2,
+        i3,
+      ],
+    },
+  },
+  {
+    id: 5,
+    title: "RiverSide Azure",
+    location:"Kilimani, Nairobi",
+    bedrooms:9,
+    area:"1,200 m²",
+    bathrooms:6,
+    shortDesc: "Riverside Azure offers beautifully designed 1-bedroom apartments tailored for both investors and modern urban homeowners. ",
+    price: "KES 470,000,000",
+    image:
+      r0,
+    detail: {
+      desc:
+        `RIVERSIDE AZURE
+
+Premium 1 Bedroom Apartments for Sale in Riverside, Westlands
+
+Riverside Azure offers beautifully designed 1-bedroom apartments tailored for both investors and modern urban homeowners. The units range between , providing spacious layouts, contemporary finishes, and excellent functionality. Residents enjoy premium amenities including high-speed lifts, an in-house club, a fully equipped gym, and secure parking. With prices ranging from and an estimated rental income of KES 65,000 – 90,000 per month, these apartments present an attractive opportunity for strong rental returns and long-term capital growth in one of Nairobi’s most sought-after neighborhoods.
+
+Modern 2 Bedroom Apartments for Sale in Westlands
+
+These elegant 2-bedroom apartments at Riverside Azure are designed for comfortable family living and premium investment value. The units range between and feature generous living spaces, modern finishes, and access to exceptional amenities such as lifts, an in-house club, a gym, and secure parking. The development also offers enhanced security with an electric fence, perimeter wall, and professional security guards. Located close to leading schools, shopping centers, and business hubs including Riverside Square, the apartments are priced between with expected rental returns of KES 110,000 – 160,000 per month.
+
+
+
+Luxury 3 Bedroom Apartments for Sale in Riverside, Nairobi
+
+Experience upscale living with the spacious 3-bedroom apartments at Riverside Azure, each measuring approximately 141 SQM. These premium residences combine generous living areas, contemporary design, and high-quality finishes to create a refined urban lifestyle. Residents benefit from world-class amenities including lifts, an in-house club, a gym, secure parking, and a well-protected environment featuring an electric fence, perimeter wall, and security guards. The project enjoys close proximity to top schools, shopping malls, restaurants, and key business districts in Westlands. The 3-bedroom units are available from with projected rental income ranging between KES 120,000 – 285,000 per month, making them ideal for both homeowners and high-yield investors.`,
+      images: [
+        r0,
+        r1,
+        r2,
+        r3,
+      ],
+    },
+  },
+  {
+    id: 6,
+    title: "Pinebrook Villas",
+    location:"Kilimani, Nairobi",
+    bedrooms:9,
+    area:"1,200 m²",
+    bathrooms:6,
+    shortDesc: "Discover refined family living at Pinebrook Premier Villas in Kitengela, an exclusive residential development offering elegant 4-bedroom standalone maisonettes designed for comfort, privacy, and modern lifestyles.",
+    price: "KES 470,000,000",
+    image:
+      r0,
+    detail: {
+      desc:
+         `Pinebrook Villas
+
+Exclusive 4 Bedroom Standalone Maisonettes
+
+Discover refined family living at Pinebrook Premier Villas in Kitengela, an exclusive residential development offering elegant 4-bedroom standalone maisonettes designed for comfort, privacy, and modern lifestyles. With only 4 units remaining, this is a rare opportunity to own a premium home in a well-planned community with excellent investment potential.
+
+Each villa sits on a generous 50 x 100 plot, offering ample space, privacy, and beautifully planned outdoor areas. The homes feature all ensuite bedrooms, spacious living areas, and thoughtfully designed interiors that provide the perfect balance between functionality and luxury. Residents also enjoy access to an in-house gym, reliable water supply, and a secure environment ideal for families.
+
+Property Features
+
+Property Features: ✓ 4 Bedroom Standalone Maisonette – All Ensuite ✓ Situated on a 50 x 100 Plot ✓ Spacious Living and Dining Areas ✓ In-House Gym Facility ✓ Secure Residential Environment`,
+      images: [
+        p0,
+        p1,
+      ],
+    },
+  },
+  {
+    id: 7,
+    title: "Mara Groove Homes",
+    location:"Kilimani, Nairobi",
+    bedrooms:9,
+    area:"1,200 m²",
+    bathrooms:6,
+    shortDesc: "Discover contemporary living at Mara Groove Apartments in Syokimau, offering stylishly designed 1-bedroom apartments perfect for first-time homeowners and investors seeking affordable property ownership with excellent rental potential.",
+    price: "KES 470,000,000",
+    image:
+      m0,
+    detail: {
+      desc:
+      `Mara Groove Homes
+
+1 Bedroom Apartments
+
+Discover contemporary living at Mara Groove Apartments in Syokimau, offering stylishly designed 1-bedroom apartments perfect for first-time homeowners and investors seeking affordable property ownership with excellent rental potential. These modern apartments feature quality finishes, adequate water supply, elevators, backup generators, and lifestyle amenities including a swimming pool, gym, and children’s play area. The units measure 56 SQM and are available for purchase at KES 4,400,000, with an estimated rental income of KES 45,000 – KES 50,000 per month, making them an attractive investment opportunity in a growing residential location.
+
+2 Bedroom Apartments
+
+Experience comfortable urban living with these beautifully designed 2-bedroom apartments at Mara Groove, Syokimau. Offering spacious interiors, modern finishes, and thoughtfully planned layouts, these homes are ideal for families, professionals, and investors looking for a property with strong rental demand. The apartments feature quality finishes, reliable water supply, elevators, backup generators, and access to premium amenities including a swimming pool, gym, and children’s play area. Measuring 95 SQM, the units are selling at KES 7,500,000 with an estimated rental income of KES 60,000 – KES 70,000 per month.
+
+
+
+3 Bedroom Apartments
+
+Own a modern and spacious 3-bedroom apartment with DSQ at Mara Groove Apartments in Syokimau, designed to provide comfort, convenience, and excellent investment value. These apartments offer generous living spaces, quality finishes, adequate water supply, elevators, backup generators, and access to lifestyle amenities including a swimming pool, gym, and children’s play area. Available sizes include 140 SQM at KES 10,900,000, 145 SQM at KES 11,300,000, and 166 SQM at KES 13,000,000, with an estimated rental income of KES 70,000 – KES 100,000 per month, making them ideal for families and investors seeking premium apartments in Syokimau.`,
+      images: [
+        m0,
+        m1,
+        m2,
+        m3,
+      ],
+    },
+  },
+  {
+    id: 8,
+    title: "Lukenya Estates",
+    location:"Kilimani, Nairobi",
+    bedrooms:9,
+    area:"1,200 m²",
+    bathrooms:6,
+    shortDesc: "Discover this beautifully designed 3-bedroom maisonette in Athi River, offering a spacious 188 sqm layout thoughtfully created for comfortable family living. ",
+    price: "KES 470,000,000",
+    image:
+      l0,
+    detail: {
+      desc:
+      `Lukenya Estate
+
+Elegant 3 Bedroom Semi-detached Maisonette
+
+Discover this beautifully designed 3-bedroom maisonette in Athi River, offering a spacious 188 sqm layout thoughtfully created for comfortable family living. The home features all ensuite bedrooms, a laundry area, solar water heating, a spacious dining and lounge area, private parking for two cars, and private manicured gardens. The ground floor features one bedroom, while the upper level hosts the master bedroom and an additional bedroom, complemented by a walk-in closet for added convenience.      |      Instalments: KES 22,500,000     |     Mortgage Option  KES 23,500,000
+
+Spacious 4 Bedroom Maisonette
+
+Experience modern living in this spacious 4-bedroom maisonette measuring 204 sqm, designed with elegance and functionality in mind. The home offers all ensuite bedrooms, a laundry area, solar water heating, generous dining and lounge spaces, private parking for two cars, and beautifully manicured gardens. The master bedroom and two bedrooms are located on the upper level, while one bedroom is conveniently positioned on the ground floor.    |   Instalment Plan:  KES 26,000,000   |    Mortgage Option: KES 28,000,000
+
+
+
+Modern 4 Bedroom Bungalow
+
+Enjoy the convenience of single-level living with this thoughtfully designed 4-bedroom bungalow measuring 195 sqm. The property features all ensuite bedrooms, a laundry area, solar water heating, spacious dining and lounge areas, a dedicated study room, private parking for two cars, and private manicured gardens. A perfect choice for families seeking privacy, comfort, and a serene home environment.   |   Instalment Plan:  KES 25,500,000   |   Mortgage Option: KES 27,000,000
+
+Luxury 4 Bedroom Villa
+
+Step into refined living with this elegant 4-bedroom villa measuring 252 sqm, offering spacious interiors and premium finishes. The villa features all ensuite bedrooms, a laundry area, solar water heating, spacious dining and lounge areas, private parking for two cars, and beautifully manicured gardens. The home includes a sunken lounge, a family room on the upper floor, one bedroom on the ground floor, and the master bedroom together with two bedrooms on the upper level.  Instalment Plan: KES 30,500,000   |   Mortgage Option: KES 32,000,000
+
+
+
+Exclusive 4 Bedroom Super Villa
+
+Experience elevated living in this expansive 4-bedroom super villa measuring 380 sqm, designed for those seeking space, privacy, and luxury. The residence features all ensuite bedrooms, a laundry area, solar water heating, a double-volume sunken lounge, private lounge, spacious dining and living areas, servants’ quarters, private parking for two cars, and beautifully manicured gardens. The master bedroom and two bedrooms are located on the upper level, with an additional bedroom on the ground floor.   Instalment Plan: KES 43,400,000   |    Mortgage Option: KES 45,000,000`,
+      images: [
+        l0,
+        l1,
+        l2,
+        l3,
+        l4,
+      ],
+    },
+  },
+    {
+    id: 9,
+    title: "Mango Haven",
+    location:"Kilimani, Nairobi",
+    bedrooms:9,
+    area:"1,200 m²",
+    bathrooms:6,
+    shortDesc: "Discover this beautifully designed 3-bedroom maisonette in Athi River, offering a spacious 188 sqm layout thoughtfully created for comfortable family living. ",
+    price: "KES 470,000,000",
+    image:
+      mh0,
+    detail: {
+      desc:`Mango Haven
+
+Affordable Studio Apartments  – Ideal Investment Opportunity
+
+Discover modern and spacious studio apartments in Syokimau, thoughtfully designed to offer comfort, convenience, and excellent investment returns. These affordable units are currently selling at KES 3,000,000 and offer an estimated rental income of KES 25,000 – KES 35,000 per month. Each studio apartment is well planned with generous living spaces and ample storage, making them ideal for both homeowners and investors looking for high-demand rental opportunities.
+
+1 Bedroom Apartments – Great Rental Potential
+
+These beautifully designed 1 bedroom apartments offer an excellent entry point into property ownership and investment. Currently selling at KES 5,000,000, the units provide an estimated rental income of KES 45,000 – KES 50,000 per month. Featuring spacious interiors, sufficient storage, an open-plan kitchen layout, and well-finished living spaces, these apartments offer a perfect blend of functionality and modern living.
+
+
+
+2 Bedroom Apartments – Spacious Homes with Strong Returns
+
+Invest in these spacious 2 bedroom apartments in Syokimau, currently available at KES 7,000,000 with an expected rental income of KES 60,000 – KES 70,000 per month. Designed for comfortable family living, the apartments feature an open-plan kitchen, generous storage spaces, large balconies, and a well-appointed master ensuite bedroom, making them attractive for both residential living and rental investment.
+
+Affordable 3 Bedroom Apartments
+
+Experience spacious modern living with these 3 bedroom apartments, currently selling at KES 10,000,000 and offering an estimated rental income of KES 70,000 – KES 100,000 per month. The units are thoughtfully designed with expansive living areas, ample storage, open-plan kitchens, large balconies, and a master ensuite bedroom, offering excellent value for families and investors seeking premium apartments in a growing location.`,
+      images: [
+        mh0,
+        mh1,
+        mh2,
+        mh3,
       ],
     },
   },
