@@ -306,7 +306,7 @@ const stagger = {
             you every step of the way.
           </p>
 
-<Link to="/contact2" className="mt-8 inline-block rounded-full bg-white px-6 py-3 text-lg font-semibold text-amber-500 transition hover:bg-white/90">
+<Link to="/contact" className="mt-8 inline-block rounded-full bg-white px-6 py-3 text-lg font-semibold text-amber-500 transition hover:bg-white/90">
 Contact Us
 </Link>
         </div>

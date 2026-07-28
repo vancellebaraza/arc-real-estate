@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import hero1 from "../assets/hero1.jpeg";
+import hero2 from "../assets/hero2.jpeg";
 
 const slides = [
   {
-    image:
-      "https://images.pexels.com/photos/24805054/pexels-photo-24805054.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    image: hero1,
     title: "Where Luxury Meets Legacy",
     description:
       "Discover extraordinary residences curated for those who demand excellence in every detail.",
@@ -25,6 +26,13 @@ const slides = [
     description:
       "Modern living spaces designed for comfort, elegance and long-term value.",
     button: "Learn More",
+  },
+  {
+    image: hero2,
+    title: "Experience Timeless Elegance",
+    description:
+      "Exclusive homes crafted with exceptional architecture and luxurious finishes.",
+    button: "Schedule a Viewing",
   },
 ];
 

@@ -190,7 +190,7 @@ textarea:focus {
 }
 
 .animate-slide-up {
-  animation: slideUp 0.8s ease forwards;
+  animation: slideUp 1.2s ease forwards;
 }
 /* Initial States */
 
