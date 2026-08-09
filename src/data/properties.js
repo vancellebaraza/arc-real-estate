@@ -22,7 +22,7 @@ import r1 from "../assets/RIVERSIDE/img2.jpeg";
 import r2 from "../assets/RIVERSIDE/img3.jpeg";
 import r3 from "../assets/RIVERSIDE/img4.jpeg";
 
-import p0 from "../assets/PINEBROOK/img1.jpeg";
+import p0 from "../assets/PINEBROOK/img3.jpeg";
 import p1 from "../assets/PINEBROOK/img2.jpeg";
 
 import m0 from "../assets/MARAGROOVE/img1.jpeg";
