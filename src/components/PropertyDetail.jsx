@@ -5,6 +5,7 @@ export default function PropertyDetail({
   property,
   isActive,
   onClose,
+  onEnquire,
 }) {
   const [activeImage, setActiveImage] = useState(
     property.detail.images[0]
@@ -169,6 +170,16 @@ export default function PropertyDetail({
 
             </div>
 
+          </div>
+
+          {/* Enquire */}
+          <div className="mt-16 text-center">
+            <button
+              onClick={() => onEnquire(property)}
+              className="rounded-full bg-amber-500 px-14 py-4 font-semibold text-slate-900 shadow-lg transition hover:scale-105 hover:bg-amber-400"
+            >
+              Enquire Now
+            </button>
           </div>
 
         </div>

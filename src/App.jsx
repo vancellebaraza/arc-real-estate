@@ -6,10 +6,12 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PropertyDetail from "./components/PropertyDetail";
+import PropertyEnquiry from "./components/PropertyEnquiry";
 import { properties } from "./data/properties";
 
 export default function App() {
   const [selectedIdx, setSelectedIdx] = useState(null);
+  const [enquiryProperty, setEnquiryProperty] = useState(null);
 
   // Scroll-triggered fade-in, equivalent to the original vanilla-JS
   // IntersectionObserver that watched every .fade-in element.
@@ -37,10 +39,11 @@ useEffect(() => {
 
   return () => observer.disconnect();
 }, []);
-  // Lock body scroll while a property detail overlay is open.
+  // Lock body scroll while a property detail or enquiry overlay is open.
   useEffect(() => {
-    document.body.style.overflow = selectedIdx !== null ? "hidden" : "";
-  }, [selectedIdx]);
+    document.body.style.overflow =
+      selectedIdx !== null || enquiryProperty !== null ? "hidden" : "";
+  }, [selectedIdx, enquiryProperty]);
 
   return (
     <>
@@ -49,7 +52,11 @@ useEffect(() => {
 
       <div className="w-full h-24 section-transition" />
 
-      <Properties properties={properties} onSelect={setSelectedIdx} />
+      <Properties
+        properties={properties}
+        onSelect={setSelectedIdx}
+        onEnquire={setEnquiryProperty}
+      />
 
       <div
         className="w-full h-24"
@@ -71,9 +78,16 @@ useEffect(() => {
           property={property}
           isActive={selectedIdx === idx}
           onClose={() => setSelectedIdx(null)}
+          onEnquire={setEnquiryProperty}
           className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] px-4"
         />
       ))}
+
+      <PropertyEnquiry
+        property={enquiryProperty}
+        isActive={enquiryProperty !== null}
+        onClose={() => setEnquiryProperty(null)}
+      />
     </>
   );
 }

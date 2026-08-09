@@ -1,6 +1,6 @@
 import PropertyCard from "./PropertyCard";
 
-export default function Properties({ properties, onSelect }) {
+export default function Properties({ properties, onSelect, onEnquire }) {
   return (
     <section
       id="properties"
@@ -36,6 +36,7 @@ export default function Properties({ properties, onSelect }) {
     <PropertyCard
       property={property}
       onClick={() => onSelect(idx)}
+      onEnquire={() => onEnquire(property)}
     />
   </div>
 ))}
