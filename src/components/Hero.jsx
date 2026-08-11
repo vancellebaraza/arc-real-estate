@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import hero1 from "../assets/hero1.jpeg";
 import hero2 from "../assets/hero2.jpeg";
+import hero3 from "../assets/hero3.jpeg";
+import hero4 from "../assets/hero4.png";
+import img1 from "../assets/MARAGROOVE/img1.jpeg";
 
 const slides = [
   {
@@ -12,23 +15,21 @@ const slides = [
     button: "View Collection",
   },
   {
-    image:
-      "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    image: hero3,
     title: "Find Your Dream Home",
     description:
       "Premium apartments, villas and investment properties in the best locations.",
     button: "Browse Properties",
   },
   {
-    image:
-      "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    image: hero4,
     title: "Built Around Your Lifestyle",
     description:
       "Modern living spaces designed for comfort, elegance and long-term value.",
     button: "Learn More",
   },
   {
-    image: hero2,
+    image: img1,
     title: "Experience Timeless Elegance",
     description:
       "Exclusive homes crafted with exceptional architecture and luxurious finishes.",

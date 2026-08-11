@@ -5,7 +5,7 @@ import s3 from "../assets/symphony-residence/img4.jpeg";
 import s4 from "../assets/symphony-residence/img5.jpeg";
 
 import c0 from "../assets/Canto/img1.jpeg";
-import c1 from "../assets/Canto/img2.jpeg";
+import c1 from "../assets/Canto/img2.png";
 import c2 from "../assets/Canto/img3.jpeg";
 
 import cb0 from "../assets/CITYBLUE/img1.jpeg";
