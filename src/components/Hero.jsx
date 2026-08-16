@@ -111,7 +111,7 @@ export default function Hero() {
       {/* Content */}
 <div
   key={current}
-  className="animate-slide-up relative z-10 flex h-full flex-col items-center justify-center px-6 text-center animate-slide-up"
+  className="animate-slide-up relative z-10 flex h-full flex-col items-center justify-end px-6 pb-13 text-center animate-slide-up"
 >
   <div className="gold-line mb-6" />
 
