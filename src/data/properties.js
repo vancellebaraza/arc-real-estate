@@ -136,10 +136,6 @@ Studio & One-Bedroom Apartments
 
 Priced from USD 76,950 to USD 96,079. Exact unit sizes have not yet been confirmed by the developer.
 
-Amenities
-
-Rooftop pool, cinema lounge, gym, sauna, coworking space, mini golf, and social areas.
-
 Best suited for investors, BnB operators, and long-term rental. Unit sizes, payment plan, and rental estimates are still pending from the developer.`,
       images: [c1, c0, c2],
     //       floorPlans: [
@@ -236,7 +232,7 @@ Modern 3 Bedroom Units
 
 A generous 142 sqm floor plan, priced from KES 15.62M to KES 16.33M for cash buyers and KES 16.12M to KES 16.83M on installment terms.
 
-Amenities: bar, gym, spa, kids' area, ping pong, rooftop garden, sky lounge, rooftop cinema, and DSQ on 2 and 3-bedroom units.`,
+`,
       images: [i0, i1, i2, i3],
       // floorPlans: [
       //   {
@@ -294,7 +290,7 @@ Luxury 3 Bedroom Apartments
 
 Sized approximately 141 sqm, priced from KES 21.7M to KES 27.1M. Estimated rental income of KES 120,000 – 285,000 per month.
 
-Amenities: lift, in-house club, gym, secure parking, electric fence, perimeter wall, and security guards. Located near Riverside Square. Exact 3-bedroom unit count and payment plan are still pending from the developer.`,
+`,
       images: [r0, r1, r2, r3],
       // floorPlans: [
       //   {
@@ -395,7 +391,7 @@ Status: 15% complete, targeted completion End 2028. 450 units.
 
 Available in 140 sqm at KES 10,900,000 and up to 166 sqm at KES 13,000,000, with estimated rental income of KES 70,000 – 100,000 per month.
 
-Amenities: quality finishes, reliable water supply, elevators, backup generators, swimming pool, gym, and children's play area.`,
+`,
       images: [m0, m1, m2, m3],
     //       floorPlans: [
     //   {
@@ -456,7 +452,7 @@ Modern 4 Bedroom Bungalow (195 sqm) — Instalment Plan: KES 25,500,000 | Mortga
 Luxury 4 Bedroom Villa (252 sqm) — Instalment Plan: KES 30,500,000 | Mortgage Option: KES 32,000,000
 Exclusive 4 Bedroom Super Villa (380 sqm) — Instalment Plan: KES 43,400,000 | Mortgage Option: KES 45,000,000
 
-Amenities: solar water heating, private 2-car parking, private manicured gardens. Payment plan and rental estimates for the base range are still pending confirmation from the developer.`,
+Payment plan and rental estimates for the base range are still pending confirmation from the developer.`,
       images: [l0, l1, l2, l3, l4],
       // floorPlans: [
       //   {
@@ -511,7 +507,7 @@ Studio Apartments
 
 97.74 – 123.54 sqm, priced from KES 7M to KES 8.5M. Estimated rental income of KES 70,000 – 100,000 per month.
 
-Amenities: in-built cooker, commercial area, gym, lift, swimming pool, CCTV, intercom — located near Nairobi National Park. Completion date, exact payment plan, and per-unit availability are still pending from the developer.`,
+Completion date, exact payment plan, and per-unit availability are still pending from the developer.`,
       images: [mh0, mh1, mh2, mh3],
       // floorPlans: [
       //   {
