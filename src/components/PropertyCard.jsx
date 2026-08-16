@@ -1,6 +1,6 @@
 import { BedDouble, Bath, Square, MapPin } from "lucide-react";
 
-export default function PropertyCard({ property, onClick }) {
+export default function PropertyCard({ property, onClick, onEnquire }) {
   return (
     <div
       onClick={()=>onClick(property)}
@@ -63,15 +63,28 @@ export default function PropertyCard({ property, onClick }) {
           <span className="text-2xl font-bold text-amber-600">
             {property.price}
           </span>
+        </div>
 
+        {/* Buttons */}
+        <div className="mt-5 flex items-center gap-3">
           <button
             onClick={(e) => {
               e.stopPropagation();
               onClick(property);
             }}
-            className="rounded-full bg-slate-900 px-5 py-3 text-white transition hover:bg-amber-500"
+            className="flex-1 rounded-full bg-slate-900 px-5 py-3 text-center text-white transition hover:bg-amber-500"
           >
             View Details
+          </button>
+
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onEnquire(property);
+            }}
+            className="flex-1 rounded-full border-2 border-amber-500 px-5 py-3 text-center font-medium text-amber-600 transition hover:bg-amber-500 hover:text-white"
+          >
+            Enquire Now
           </button>
         </div>
       </div>

@@ -255,7 +255,7 @@ export default function Contact() {
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">
 
-          <div className="rounded-3xl bg-slate-900 p-12 text-white">
+          <div className="rounded-xl bg-slate-900 p-12 text-white">
 
             <div className="flex items-center gap-4">
               <Clock className="h-10 w-10 text-yellow-400" />
