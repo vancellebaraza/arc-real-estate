@@ -12,7 +12,7 @@ export default function PropertyCard({ property, onClick }) {
           onClick(property);
         }
       }}
-      className=" group cursor-pointer overflow-hidden rounded-3xl bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+      className=" group flex h-full cursor-pointer flex-col overflow-hidden rounded-3xl bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
     >
       {/* Image */}
       <div className="overflow-hidden">
@@ -25,7 +25,7 @@ export default function PropertyCard({ property, onClick }) {
       </div>
 
       {/* Content */}
-      <div className="p-7">
+      <div className="flex flex-col flex-1 p-7">
         <h3 className="text-2xl font-semibold text-slate-900">
           {property.title}
         </h3>
@@ -59,7 +59,7 @@ export default function PropertyCard({ property, onClick }) {
         </div>
 
         {/* Price & Button */}
-        <div className="mt-8 flex items-center justify-between">
+        <div className="mt-auto flex items-center justify-between pt-8">
           <span className="text-2xl font-bold text-amber-600">
             {property.price}
           </span>
