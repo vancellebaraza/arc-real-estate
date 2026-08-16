@@ -24,11 +24,11 @@ export default function Properties({ properties, onSelect, onEnquire }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 items-stretch">
 {properties.map((property, idx) => (
   <div
     key={property.id}
-    className="slide-up"
+    className="slide-up h-full"
     style={{
       transitionDelay: `${idx * 150}ms`,
     }}

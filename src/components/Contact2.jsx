@@ -78,7 +78,7 @@ export default function Contact() {
               </h3>
 
               <p className="mt-3 text-gray-600">
-                +254 733 660 993
+                +254 731 864 547
               </p>
             </div>
 
@@ -90,7 +90,7 @@ export default function Contact() {
               </h3>
 
               <p className="mt-3 text-gray-600">
-                marketing@arkrealestates.com
+                sales@arkrealestates.com
               </p>
             </div>
 
@@ -316,7 +316,7 @@ export default function Contact() {
           <div className="overflow-hidden rounded-3xl shadow-xl">
 
             <iframe
-              title="Arc Real Estates"
+              title="Ark Real Estates"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5017.276935062796!2d36.80844282496545!3d-1.2353476487528785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17b971bec3f1%3A0x9130770823960f80!2sWarwick%20Centre!5e1!3m2!1sen!2ske!4v1784585932624!5m2!1sen!2ske"
               className="h-[500px] w-full border-0"
               loading="lazy"

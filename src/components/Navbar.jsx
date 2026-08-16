@@ -26,7 +26,7 @@ export default function Navbar() {
 <div className="flex items-center gap-3">
   <img
     src={logo}
-    alt="Real Arc Estate Logo"
+    alt="Real Ark Estate Logo"
     className="h-18 w-auto object-contain transition-transform duration-300 hover:scale-105"
   />
 
@@ -51,6 +51,12 @@ to="/about" className="nav-link">About</Link>
   <Link to="/contact" className="nav-link">
     Contact
   </Link>
+      <a href="https://arkrealestates.com/mortgage-calculator" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="nav-link">
+      Mortgage Calculator
+    </a>
 </div>
         </div>
 
@@ -104,6 +110,14 @@ to="/about" className="nav-link">About</Link>
     >
       Contact
     </Link>
+    <a href="https://arkrealestates.com/mortgage-calculator" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="text-sm font-light"
+    style={{ color: "var(--charcoal)" }}
+    >
+      Mortgage Calculator
+    </a>
   </div>
 )}
     </nav>

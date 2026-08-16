@@ -41,6 +41,29 @@ import mh1 from "../assets/MANGOHAVEN/img2.jpeg";
 import mh2 from "../assets/MANGOHAVEN/img3.jpeg";
 import mh3 from "../assets/MANGOHAVEN/img4.jpeg";
 
+import {
+  Dumbbell,
+  Waves,
+  Car,
+  ShieldCheck,
+  Trees,
+  Building2,
+  Baby,
+  Gamepad2,
+  Clapperboard,
+  BriefcaseBusiness,
+  HeartPulse,
+  Sparkles,
+  CircleParking,
+  Zap,
+  Droplets,
+  CookingPot,
+  Video,
+  DoorOpen,
+  Fence,
+  Home,
+  Sun,
+} from "lucide-react";
 
 
 export const properties = [
@@ -75,7 +98,22 @@ Sized 178 to 189.5 sqm, priced from USD 210,579 to USD 259,145.
 
 Payment plan, full amenity list, and unit availability are still being confirmed with the developer — pricing above is accurate as of the latest schedule.`,
       images: [s3, s1, s2, s0, s4],
+      floorPlans: [
+        {
+          name: "Studio Apartment",
+          image: s0,
+        },
+        {
+          name: "1 Bedroom Apartment",
+          image: s1,
+        },
+        {
+          name: "Typical Floor Plan",
+          image: s2,
+        },
+      ],
     },
+    amenities: [],
   },
   {
     id: 2,
@@ -104,7 +142,30 @@ Rooftop pool, cinema lounge, gym, sauna, coworking space, mini golf, and social 
 
 Best suited for investors, BnB operators, and long-term rental. Unit sizes, payment plan, and rental estimates are still pending from the developer.`,
       images: [c1, c0, c2],
+    //       floorPlans: [
+    //   {
+    //     name: "Studio Apartment",
+    //     image: cantoFloor1,
+    //   },
+    //   {
+    //     name: "1 Bedroom Apartment",
+    //     image: cantoFloor2,
+    //   },
+    //   {
+    //     name: "Typical Floor Plan",
+    //     image: cantoFloor3,
+    //   },
+    // ],
     },
+    amenities: [
+  { key: "Rooftop Pool", icon: Waves },
+  { key: "Cinema Lounge", icon: Clapperboard },
+  { key: "Gym", icon: Dumbbell },
+  { key: "Sauna", icon: Sparkles },
+  { key: "Coworking Space", icon: BriefcaseBusiness },
+  { key: "Mini Golf", icon: Gamepad2 },
+  { key: "Social Areas", icon: Building2 },
+],
   },
   {
     id: 3,
@@ -129,7 +190,22 @@ Priced from USD 206,670 to USD 274,509. Potential ROI of 12–14% for investors.
 
 This is a hotel-managed investment development — units are positioned for hotel-style rental income rather than owner occupation. Exact unit sizes, payment plan, and availability are still pending from the developer.`,
       images: [cb2, cb0, cb1],
+    //       floorPlans: [
+    //   {
+    //     name: "Studio Apartment",
+    //     image: cantoFloor1,
+    //   },
+    //   {
+    //     name: "1 Bedroom Apartment",
+    //     image: cantoFloor2,
+    //   },
+    //   {
+    //     name: "Typical Floor Plan",
+    //     image: cantoFloor3,
+    //   },
+    // ],
     },
+    amenities: [],
   },
   {
     id: 4,
@@ -162,7 +238,32 @@ A generous 142 sqm floor plan, priced from KES 15.62M to KES 16.33M for cash buy
 
 Amenities: bar, gym, spa, kids' area, ping pong, rooftop garden, sky lounge, rooftop cinema, and DSQ on 2 and 3-bedroom units.`,
       images: [i0, i1, i2, i3],
+      // floorPlans: [
+      //   {
+      //     name: "Studio Apartment",
+      //     image: i0,
+      //   },
+      //   {
+      //     name: "1 Bedroom Apartment",
+      //     image: i1,
+      //   },
+      //   {
+      //     name: "Typical Floor Plan",
+      //     image: i2,
+      //   },
+      // ],
     },
+    amenities: [
+  { key: "Bar", icon: Building2 },
+  { key: "Gym", icon: Dumbbell },
+  { key: "Spa", icon: Sparkles },
+  { key: "Kids' Area", icon: Baby },
+  { key: "Ping Pong", icon: Gamepad2 },
+  { key: "Rooftop Garden", icon: Trees },
+  { key: "Sky Lounge", icon: Building2 },
+  { key: "Rooftop Cinema", icon: Clapperboard },
+  { key: "DSQ", icon: Home },
+],
   },
   {
     id: 5,
@@ -195,7 +296,30 @@ Sized approximately 141 sqm, priced from KES 21.7M to KES 27.1M. Estimated renta
 
 Amenities: lift, in-house club, gym, secure parking, electric fence, perimeter wall, and security guards. Located near Riverside Square. Exact 3-bedroom unit count and payment plan are still pending from the developer.`,
       images: [r0, r1, r2, r3],
+      // floorPlans: [
+      //   {
+      //     name: "Studio Apartment",
+      //     image: r0,
+      //   },
+      //   {
+      //     name: "1 Bedroom Apartment",
+      //     image: r1,
+      //   },
+      //   {
+      //     name: "Typical Floor Plan",
+      //     image: r2,
+      //   },
+      // ],
     },
+    amenities: [
+  { key: "Lift", icon: Building2 },
+  { key: "In-house Club", icon: Building2 },
+  { key: "Gym", icon: Dumbbell },
+  { key: "Secure Parking", icon: CircleParking },
+  { key: "Electric Fence", icon: Zap },
+  { key: "Perimeter Wall", icon: Fence },
+  { key: "Security Guards", icon: ShieldCheck },
+],
   },
   {
     id: 6,
@@ -220,7 +344,27 @@ Property Features: 4 Bedroom Standalone Maisonette – All Ensuite. Situated on 
 
 Completion status, payment plan, and exact remaining unit count are still pending from the developer.`,
       images: [p0, p1],
+      // floorPlans: [
+      //   {
+      //     name: "Studio Apartment",
+      //     image: p0,
+      //   },
+      //   {
+      //     name: "1 Bedroom Apartment",
+      //     image: p1,
+      //   },
+      //   {
+      //     name: "Typical Floor Plan",
+      //     image: p2,
+      //   },
+      // ],
     },
+    amenities: [
+  { key: "Commercial Area", icon: Building2 },
+  { key: "Gym", icon: Dumbbell },
+  { key: "Backup Water Supply", icon: Droplets },
+  { key: "Security", icon: ShieldCheck },
+],
   },
   {
     id: 7,
@@ -253,7 +397,30 @@ Available in 140 sqm at KES 10,900,000 and up to 166 sqm at KES 13,000,000, with
 
 Amenities: quality finishes, reliable water supply, elevators, backup generators, swimming pool, gym, and children's play area.`,
       images: [m0, m1, m2, m3],
+    //       floorPlans: [
+    //   {
+    //     name: "Studio Apartment",
+    //     image: cantoFloor1,
+    //   },
+    //   {
+    //     name: "1 Bedroom Apartment",
+    //     image: cantoFloor2,
+    //   },
+    //   {
+    //     name: "Typical Floor Plan",
+    //     image: cantoFloor3,
+    //   },
+    // ],
     },
+    amenities: [
+  { key: "Quality Finishes", icon: Sparkles },
+  { key: "Reliable Water Supply", icon: Droplets },
+  { key: "Elevator", icon: Building2 },
+  { key: "Backup Generator", icon: Zap },
+  { key: "Swimming Pool", icon: Waves },
+  { key: "Gym", icon: Dumbbell },
+  { key: "Children's Play Area", icon: Baby },
+],
   },
   {
     id: 8,
@@ -291,7 +458,26 @@ Exclusive 4 Bedroom Super Villa (380 sqm) — Instalment Plan: KES 43,400,000 | 
 
 Amenities: solar water heating, private 2-car parking, private manicured gardens. Payment plan and rental estimates for the base range are still pending confirmation from the developer.`,
       images: [l0, l1, l2, l3, l4],
+      // floorPlans: [
+      //   {
+      //     name: "Studio Apartment",
+      //     image: l0,
+      //   },
+      //   {
+      //     name: "1 Bedroom Apartment",
+      //     image: l1,
+      //   },
+      //   {
+      //     name: "Typical Floor Plan",
+      //     image: l2,
+      //   },
+      // ],
     },
+    amenities: [
+  { key: "Solar Water Heating", icon: Sun },
+  { key: "Private 2-Car Parking", icon: Car },
+  { key: "Private Manicured Gardens", icon: Trees },
+],
   },
     {
     id: 9,
@@ -327,6 +513,29 @@ Studio Apartments
 
 Amenities: in-built cooker, commercial area, gym, lift, swimming pool, CCTV, intercom — located near Nairobi National Park. Completion date, exact payment plan, and per-unit availability are still pending from the developer.`,
       images: [mh0, mh1, mh2, mh3],
+      // floorPlans: [
+      //   {
+      //     name: "Studio Apartment",
+      //     image: mh0,
+      //   },
+      //   {
+      //     name: "1 Bedroom Apartment",
+      //     image: mh1,
+      //   },
+      //   {
+      //     name: "Typical Floor Plan",
+      //     image: mh2,
+      //   },
+      // ],
     },
+    amenities: [
+  { key: "In-built Cooker", icon: CookingPot },
+  { key: "Commercial Area", icon: Building2 },
+  { key: "Gym", icon: Dumbbell },
+  { key: "Lift", icon: Building2 },
+  { key: "Swimming Pool", icon: Waves },
+  { key: "CCTV", icon: Video },
+  { key: "Intercom", icon: DoorOpen },
+],
   },
 ];

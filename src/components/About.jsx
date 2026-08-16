@@ -17,7 +17,7 @@ export default function About() {
         <div className="slide-left">
           <img
             src={logo1}
-            alt="Real Arc Estate office"
+            alt="Real Ark Estate office"
             className="w-full h-96 object-cover rounded-sm"
             loading="lazy"
           />
