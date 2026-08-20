@@ -24,8 +24,9 @@ import r0 from "../assets/RIVERSIDE/img1.jpeg";
 import r1 from "../assets/RIVERSIDE/img2.jpeg";
 import r2 from "../assets/RIVERSIDE/img3.jpeg";
 import r3 from "../assets/RIVERSIDE/img4.jpeg";
+import r4 from "../assets/PINEBROOK/img1.jpeg";
 
-import p0 from "../assets/PINEBROOK/img1.jpeg";
+
 import p1 from "../assets/PINEBROOK/img2.jpeg";
 import p2 from "../assets/PINEBROOK/img3.jpeg";
 import p3 from "../assets/PINEBROOK/img4.jpeg";
@@ -296,7 +297,7 @@ Luxury 3 Bedroom Apartments
 Sized approximately 141 sqm, priced from KES 21.7M to KES 27.1M. Estimated rental income of KES 120,000 – 285,000 per month.
 
 `,
-      images: [r0, r1, r2, r3],
+      images: [r0, r1, r2, r3, r4],
       // floorPlans: [
       //   {
       //     name: "Studio Apartment",
@@ -332,7 +333,7 @@ Sized approximately 141 sqm, priced from KES 21.7M to KES 27.1M. Estimated renta
     shortDesc:
       "Pinebrook Premier Villas in Kitengela — 4-bedroom standalone maisonettes on a 50x100 plot, priced at KES 16M with rental potential of KES 60,000 – 85,000/month.",
     price: "KES 16,000,000",
-    image: p0,
+    image: p1,
     detail: {
       desc:
         `Pinebrook Premier Villas — Kitengela
@@ -344,7 +345,7 @@ Exclusive 4 Bedroom Standalone Maisonettes
 Property Features: 4 Bedroom Standalone Maisonette – All Ensuite. Situated on a 50 x 100 Plot. Commercial area on site. In-house gym facility. Backup water supply and security.
 
 Completion status, payment plan, and exact remaining unit count are still pending from the developer.`,
-      images: [p0, p1, p2, p3],
+      images: [ p1, p2, p3],
       // floorPlans: [
       //   {
       //     name: "Studio Apartment",
