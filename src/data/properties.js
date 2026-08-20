@@ -13,9 +13,9 @@ import cb1 from "../assets/CITYBLUE/img2.jpeg";
 import cb2 from "../assets/CITYBLUE/img3.jpeg";
 
 import i0 from "../assets/IVYPARK/img1.jpeg";
-import i1 from "../assets/IVYPARK/img2.jpeg";
-import i2 from "../assets/IVYPARK/img3.jpeg";
-import i3 from "../assets/IVYPARK/img4.jpeg";
+import i1 from "../assets/IVYPARK/floorplans/img2.jpeg";
+import i2 from "../assets/IVYPARK/floorplans/img3.jpeg";
+import i3 from "../assets/IVYPARK/floorplans/img4.jpeg";
 import i4 from "../assets/IVYPARK/img5.jpeg";
 import i5 from "../assets/IVYPARK/img6.jpeg";
 import i6 from "../assets/IVYPARK/img7.jpeg";
@@ -238,21 +238,21 @@ Modern 3 Bedroom Units
 A generous 142 sqm floor plan, priced from KES 15.62M to KES 16.33M for cash buyers and KES 16.12M to KES 16.83M on installment terms.
 
 `,
-      images: [i0, i1, i2,i3, i4, i5, i6],
-      // floorPlans: [
-      //   {
-      //     name: "Studio Apartment",
-      //     image: i0,
-      //   },
-      //   {
-      //     name: "1 Bedroom Apartment",
-      //     image: i1,
-      //   },
-      //   {
-      //     name: "Typical Floor Plan",
-      //     image: i2,
-      //   },
-      // ],
+      images: [i0,  i4, i5, i6],
+      floorPlans: [
+        {
+          name: "plan 1",
+          image: i1,
+        },
+        {
+          name: "plan 2",
+          image: i2,
+        },
+        {
+          name: "plan 3",
+          image: i3,
+        },
+      ],
     },
     amenities: [
   { key: "Bar", icon: Building2 },
