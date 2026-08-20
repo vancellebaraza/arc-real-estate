@@ -16,14 +16,19 @@ import i0 from "../assets/IVYPARK/img1.jpeg";
 import i1 from "../assets/IVYPARK/img2.jpeg";
 import i2 from "../assets/IVYPARK/img3.jpeg";
 import i3 from "../assets/IVYPARK/img4.jpeg";
+import i4 from "../assets/IVYPARK/img5.jpeg";
+import i5 from "../assets/IVYPARK/img6.jpeg";
+import i6 from "../assets/IVYPARK/img7.jpeg";
 
 import r0 from "../assets/RIVERSIDE/img1.jpeg";
 import r1 from "../assets/RIVERSIDE/img2.jpeg";
 import r2 from "../assets/RIVERSIDE/img3.jpeg";
 import r3 from "../assets/RIVERSIDE/img4.jpeg";
 
-import p0 from "../assets/PINEBROOK/img3.jpeg";
+import p0 from "../assets/PINEBROOK/img1.jpeg";
 import p1 from "../assets/PINEBROOK/img2.jpeg";
+import p2 from "../assets/PINEBROOK/img3.jpeg";
+import p3 from "../assets/PINEBROOK/img4.jpeg";
 
 import m0 from "../assets/MARAGROOVE/img1.jpeg";
 import m1 from "../assets/MARAGROOVE/img2.jpeg";
@@ -233,7 +238,7 @@ Modern 3 Bedroom Units
 A generous 142 sqm floor plan, priced from KES 15.62M to KES 16.33M for cash buyers and KES 16.12M to KES 16.83M on installment terms.
 
 `,
-      images: [i0, i1, i2, i3],
+      images: [i0, i1, i2,i3, i4, i5, i6],
       // floorPlans: [
       //   {
       //     name: "Studio Apartment",
@@ -339,7 +344,7 @@ Exclusive 4 Bedroom Standalone Maisonettes
 Property Features: 4 Bedroom Standalone Maisonette – All Ensuite. Situated on a 50 x 100 Plot. Commercial area on site. In-house gym facility. Backup water supply and security.
 
 Completion status, payment plan, and exact remaining unit count are still pending from the developer.`,
-      images: [p0, p1],
+      images: [p0, p1, p2, p3],
       // floorPlans: [
       //   {
       //     name: "Studio Apartment",
