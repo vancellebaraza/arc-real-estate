@@ -24,7 +24,7 @@ import r0 from "../assets/RIVERSIDE/img1.jpeg";
 import r1 from "../assets/RIVERSIDE/img2.jpeg";
 import r2 from "../assets/RIVERSIDE/img3.jpeg";
 import r3 from "../assets/RIVERSIDE/img4.jpeg";
-import r4 from "../assets/PINEBROOK/img1.jpeg";
+// import r4 from "../assets/PINEBROOK/img1.jpeg";
 
 
 import p1 from "../assets/PINEBROOK/img2.jpeg";
@@ -297,7 +297,7 @@ Luxury 3 Bedroom Apartments
 Sized approximately 141 sqm, priced from KES 21.7M to KES 27.1M. Estimated rental income of KES 120,000 – 285,000 per month.
 
 `,
-      images: [r0, r1, r2, r3, r4],
+      images: [r0, r1, r2, r3],
       // floorPlans: [
       //   {
       //     name: "Studio Apartment",
