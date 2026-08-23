@@ -151,18 +151,31 @@ export default function PropertyDetail({
                   Property Overview
                 </h2>
 
-                <div className="mt-6 space-y-6">
-                  {property.detail.desc
-                    .split("\n\n")
-                    .map((paragraph, index) => (
-                      <p
-                        key={index}
-                        className="leading-8 text-slate-600"
-                      >
-                        {paragraph}
-                      </p>
-                    ))}
-                </div>
+<div className="mt-6 space-y-6">
+  {property.detail.desc
+    .split("\n\n")
+    .map((paragraph, index) => {
+      const isBedroomHeading =
+        /^(One|Two|Three|Four)[-\s]Bedroom/i.test(paragraph) ||
+        /^\S.*\b[1-4]\s*Bedroom\b/i.test(paragraph);
+
+      return isBedroomHeading ? (
+        <p
+          key={index}
+          className="font-bold leading-8 text-slate-900"
+        >
+          {paragraph}
+        </p>
+      ) : (
+        <p
+          key={index}
+          className="leading-8 text-slate-600"
+        >
+          {paragraph}
+        </p>
+      );
+    })}
+</div>
               </div>
 
               {/* RIGHT — Amenities */}

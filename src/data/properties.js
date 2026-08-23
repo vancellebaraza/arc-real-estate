@@ -140,7 +140,7 @@ Status: 30% complete, targeted completion End 2028. 273 units across 25 floors.
 
 Studio & One-Bedroom Apartments
 
-Priced from USD 76,950 to USD 96,079. Exact unit sizes have not yet been confirmed by the developer.
+Priced from USD 76,950 to USD 96,079.
 
 Best suited for investors, BnB operators, and long-term rental. Unit sizes, payment plan, and rental estimates are still pending from the developer.`,
       images: [c1, c0, c2],
