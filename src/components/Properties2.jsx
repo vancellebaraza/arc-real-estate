@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import { properties } from "../data/properties";
 import PropertyCard from "./PropertyCard";
 import PropertyDetail from "./PropertyDetail";
+import PropertyEnquiry from "./PropertyEnquiry";
 
 export default function PropertiesPage() {
   const [search, setSearch] = useState("");
@@ -14,6 +15,7 @@ export default function PropertiesPage() {
   );
 
    const [selectedProperty, setSelectedProperty] = useState(null);
+   const [enquiryProperty, setEnquiryProperty] = useState(null);
 
   return (
     <main className="bg-stone-50 min-h-screen">
@@ -88,6 +90,7 @@ export default function PropertiesPage() {
       key={property.id}
       property={property}
       onClick={setSelectedProperty}
+      onEnquire={setEnquiryProperty}
     />
   ))}
 
@@ -96,8 +99,17 @@ export default function PropertiesPage() {
           property={selectedProperty}
           isActive={true}
           onClose={() => setSelectedProperty(null)}
+          onEnquire={setEnquiryProperty}
         />
       )}
+
+    {enquiryProperty && (
+      <PropertyEnquiry
+        property={enquiryProperty}
+        isActive={true}
+        onClose={() => setEnquiryProperty(null)}
+      />
+    )}
 </div>
 
         
