@@ -7,39 +7,37 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PropertyDetail from "./components/PropertyDetail";
 import PropertyEnquiry from "./components/PropertyEnquiry";
-import { properties } from "./data/properties";
+import { useProperties } from "./hooks/useProperties";
 
 export default function App() {
+  const { properties } = useProperties();
   const [selectedIdx, setSelectedIdx] = useState(null);
   const [enquiryProperty, setEnquiryProperty] = useState(null);
 
-  // Scroll-triggered fade-in, equivalent to the original vanilla-JS
-  // IntersectionObserver that watched every .fade-in element.
+  useEffect(() => {
+    const elements = document.querySelectorAll(
+      ".fade-in, .slide-up, .slide-left, .slide-right"
+    );
 
-useEffect(() => {
-  const elements = document.querySelectorAll(
-    ".fade-in, .slide-up, .slide-left, .slide-right"
-  );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      }
+    );
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target); // animate only once
-        }
-      });
-    },
-    {
-      threshold: 0.15,
-    }
-  );
+    elements.forEach((el) => observer.observe(el));
 
-  elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
-  return () => observer.disconnect();
-}, []);
-  // Lock body scroll while a property detail or enquiry overlay is open.
   useEffect(() => {
     document.body.style.overflow =
       selectedIdx !== null || enquiryProperty !== null ? "hidden" : "";

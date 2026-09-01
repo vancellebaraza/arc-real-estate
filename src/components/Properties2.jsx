@@ -2,12 +2,13 @@ import { useState } from "react";
 import { Search, MapPin, BedDouble, Bath, Square } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { properties } from "../data/properties";
+import { useProperties } from "../hooks/useProperties";
 import PropertyCard from "./PropertyCard";
 import PropertyDetail from "./PropertyDetail";
 import PropertyEnquiry from "./PropertyEnquiry";
 
 export default function PropertiesPage() {
+  const { properties } = useProperties();
   const [search, setSearch] = useState("");
 
   const filteredProperties = properties.filter((property) =>
@@ -21,7 +22,6 @@ export default function PropertiesPage() {
     <main className="bg-stone-50 min-h-screen">
       <Navbar />
 
-      {/* Hero */}
       <section className="relative h-[55vh] overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1629236714859-3a1ec2d8f6c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -49,7 +49,6 @@ export default function PropertiesPage() {
         </div>
       </section>
 
-      {/* Search */}
       <section className="-mt-10 relative z-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="rounded-2xl bg-white shadow-xl p-6">
@@ -68,7 +67,6 @@ export default function PropertiesPage() {
         </div>
       </section>
 
-      {/* Properties Grid */}
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">
 
@@ -81,8 +79,6 @@ export default function PropertiesPage() {
               {filteredProperties.length} Properties
             </p>
           </div>
-
-          
 
 <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
   {filteredProperties.map((property) => (
@@ -111,8 +107,6 @@ export default function PropertiesPage() {
       />
     )}
 </div>
-
-        
 
         </div>
       </section>

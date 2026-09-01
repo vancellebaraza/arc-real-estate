@@ -5,6 +5,9 @@ import App from "./App";
 import About from "./components/About2";
 import Properties from "./components/Properties2";
 import WhatsAppButton from "./components/whatsappbutton";
+import AdminLogin from "./components/admin/AdminLogin";
+import AdminDashboard from "./components/admin/AdminDashboard";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 export default function AppRoutes() {
   return (
@@ -14,8 +17,16 @@ export default function AppRoutes() {
         <Route path="/properties" element={<Properties />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
 
-        {/* 404 Page */}
         <Route
           path="*"
           element={

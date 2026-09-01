@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const socialIcons = [
   {
     label: "Instagram",
@@ -56,10 +58,17 @@ export default function Footer() {
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <p
-          className="text-xs font-light"
+          className="text-xs font-light flex items-center gap-3"
           style={{ color: "rgba(255,255,255,0.4)" }}
         >
           © 2026 ARK Real Estate Company. All rights reserved.
+          <Link
+            to="/admin/login"
+            className="hover:underline"
+            style={{ color: "rgba(255,255,255,0.4)" }}
+          >
+            Admin
+          </Link>
         </p>
         <div className="flex gap-5">
           {socialIcons.map((icon) => (
