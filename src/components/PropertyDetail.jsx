@@ -215,14 +215,65 @@ export default function PropertyDetail({
           </div>
           {/* Floor Plans */}
           {floorPlans.length > 0 && (
-          <div className="mt-10 flex justify-center">
+          <div className="relative z-30 mt-10 flex justify-center">
             <button
-            onClick={() => setShowFloorPlans(true)}
-            className="flex items-center gap-3 rounded-full bg-slate-900 px-7 py-3.5 font-medium text-white shadow-lg transition hover:-translate-y-1 hover:bg-amber-500 hover:text-slate-900"
-           >
-          <FileImage size={20} />
-           View Floor Plans
-          </button>
+              onClick={() => setShowFloorPlans((visible) => !visible)}
+              className="flex items-center gap-3 rounded-full bg-slate-900 px-7 py-3.5 font-medium text-white shadow-lg transition hover:-translate-y-1 hover:bg-amber-500 hover:text-slate-900"
+            >
+              <FileImage size={20} />
+              View Floor Plans
+            </button>
+
+            {showFloorPlans && (
+              <div
+                className="absolute top-full mt-4 max-h-[75vh] w-full max-w-6xl overflow-y-auto rounded-2xl bg-white shadow-2xl ring-1 ring-slate-200"
+                onClick={(event) => event.stopPropagation()}
+              >
+                <div className="sticky top-0 z-10 flex items-center justify-between border-b bg-white px-6 py-5">
+                  <div>
+                    <h2 className="text-2xl font-semibold text-slate-900">
+                      Floor Plans
+                    </h2>
+                    <p className="mt-1 text-sm text-slate-500">
+                      {property.title}
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={() => setShowFloorPlans(false)}
+                    className="flex h-10 w-10 items-center justify-center rounded-full text-slate-500 transition hover:bg-slate-100 hover:text-slate-900"
+                    aria-label="Close floor plans"
+                  >
+                    <X size={22} />
+                  </button>
+                </div>
+
+                <div className="p-6 md:p-8">
+                  <div className="grid gap-8 md:grid-cols-2">
+                    {floorPlans.map((plan, index) => (
+                      <div
+                        key={plan.name || index}
+                        className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+                      >
+                        <div className="border-b px-5 py-4">
+                          <h3 className="font-semibold text-slate-900">
+                            {plan.name}
+                          </h3>
+                        </div>
+
+                        <div className="flex items-center justify-center bg-white p-6">
+                          <img
+                            src={plan.image}
+                            alt={`${plan.name} floor plan`}
+                            className="h-auto max-h-[600px] w-full object-contain"
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         )}
           {/* Gallery */}
@@ -265,74 +316,6 @@ export default function PropertyDetail({
       </div>
 
 
-{/* Floor Plans Modal */}
-{showFloorPlans && (
-  <div
-    className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
-    onClick={() => setShowFloorPlans(false)}
-  >
-    <div
-      className="relative flex max-h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl"
-      onClick={(e) => e.stopPropagation()}
-    >
-
-      {/* Header */}
-      <div className="flex items-center justify-between border-b bg-white px-6 py-5">
-        <div>
-          <h2 className="text-2xl font-semibold text-slate-900">
-            Floor Plans
-          </h2>
-
-          <p className="mt-1 text-sm text-slate-500">
-            {property.title}
-          </p>
-        </div>
-
-        {/* Close Button */}
-        <button
-          onClick={() => setShowFloorPlans(false)}
-          className="flex h-10 w-10 items-center justify-center rounded-full text-slate-500 transition hover:bg-slate-100 hover:text-slate-900"
-          aria-label="Close floor plans"
-        >
-          <X size={22} />
-        </button>
-      </div>
-
-      {/* Floor Plans */}
-      <div className="overflow-y-auto p-6 md:p-8">
-        <div className="grid gap-8 md:grid-cols-2">
-
-          {floorPlans.map((plan, index) => (
-            <div
-              key={plan.name || index}
-              className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
-            >
-
-              {/* Plan Name */}
-              <div className="border-b px-5 py-4">
-                <h3 className="font-semibold text-slate-900">
-                  {plan.name}
-                </h3>
-              </div>
-
-              {/* Plan Image */}
-              <div className="flex items-center justify-center bg-white p-6">
-                <img
-                  src={plan.image}
-                  alt={`${plan.name} floor plan`}
-                  className="h-auto max-h-[600px] w-full object-contain"
-                />
-              </div>
-
-            </div>
-          ))}
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-)}
     </div>
   );
 }

@@ -46,6 +46,8 @@ import mh0 from "../assets/MANGOHAVEN/img1.jpeg";
 import mh1 from "../assets/MANGOHAVEN/img2.jpeg";
 import mh2 from "../assets/MANGOHAVEN/img3.jpeg";
 import mh3 from "../assets/MANGOHAVEN/img4.jpeg";
+import mhFloorPlan1 from "../assets/MANGOHAVEN/ChatGPT Image Sep 2, 2026, 05_58_03 PM.png";
+import mhFloorPlan2 from "../assets/MANGOHAVEN/imagee2.png";
 
 import {
   Dumbbell,
@@ -100,7 +102,7 @@ Sized 75.9 to 112.9 sqm, priced from USD 91,066 to USD 135,480.
 
 Three-Bedroom Apartments
 
-Sized 178 to 189.5 sqm, priced from USD 210,579 to USD 259,145.
+
 
 Payment plan, full amenity list, and unit availability are still being confirmed with the developer — pricing above is accurate as of the latest schedule.`,
       images: [s3, s1, s2, s0, s4],
@@ -515,20 +517,16 @@ Studio Apartments
 
 Completion date, exact payment plan, and per-unit availability are still pending from the developer.`,
       images: [mh0, mh1, mh2, mh3],
-      // floorPlans: [
-      //   {
-      //     name: "Studio Apartment",
-      //     image: mh0,
-      //   },
-      //   {
-      //     name: "1 Bedroom Apartment",
-      //     image: mh1,
-      //   },
-      //   {
-      //     name: "Typical Floor Plan",
-      //     image: mh2,
-      //   },
-      // ],
+      floorPlans: [
+        {
+          name: "2 Bedroom Apartment",
+          image: mhFloorPlan1,
+        },
+        {
+          name: "1 Bedroom Apartment",
+          image: mhFloorPlan2,
+        },
+      ],
     },
     amenities: [
   { key: "In-built Cooker", icon: CookingPot },
