@@ -400,21 +400,21 @@ Status: 15% complete, targeted completion End 2028. 450 units.
 Available in 140 sqm at KES 10,900,000 and up to 166 sqm at KES 13,000,000, with estimated rental income of KES 70,000 – 100,000 per month.
 
 `,
-      images: [m0, m1, m2, m3],
-    //       floorPlans: [
-    //   {
-    //     name: "Studio Apartment",
-    //     image: cantoFloor1,
-    //   },
-    //   {
-    //     name: "1 Bedroom Apartment",
-    //     image: cantoFloor2,
-    //   },
-    //   {
-    //     name: "Typical Floor Plan",
-    //     image: cantoFloor3,
-    //   },
-    // ],
+      images: [m0],
+      floorPlans: [
+        {
+          name: "1 Bedroom Apartment — 56 m²",
+          image: m1,
+        },
+        {
+          name: "2 Bedroom Apartment — 95 m²",
+          image: m2,
+        },
+        {
+          name: "3 Bedroom Apartment + DSQ — 145 m²",
+          image: m3,
+        },
+      ],
     },
     amenities: [
   { key: "Quality Finishes", icon: Sparkles },

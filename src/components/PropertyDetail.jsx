@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -22,7 +22,19 @@ export default function PropertyDetail({
   const [activeImage, setActiveImage] = useState(
     property.detail.images[0]
   );
+  const [maximizedImage, setMaximizedImage] = useState(null);
   const [showFloorPlans, setShowFloorPlans] = useState(false);
+
+  useEffect(() => {
+    if (!maximizedImage) return undefined;
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") setMaximizedImage(null);
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [maximizedImage]);
 
   if (!isActive) return null;
 
@@ -283,14 +295,17 @@ export default function PropertyDetail({
               Gallery
             </h2>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="relative grid grid-cols-2 gap-6">
 
               {property.detail.images.map((image) => (
                 <img
                   key={image}
                   src={image}
                   alt={property.title}
-                  onClick={() => setActiveImage(image)}
+                  onClick={() => {
+                    setActiveImage(image);
+                    setMaximizedImage(image);
+                  }}
                   className={`h-80 w-full cursor-pointer rounded-2xl object-cover transition duration-300 hover:scale-105 ${
                     activeImage === image
                       ? "ring-4 ring-amber-500"
@@ -298,6 +313,31 @@ export default function PropertyDetail({
                   }`}
                 />
               ))}
+
+              {maximizedImage && (
+                <div
+                  className="absolute inset-0 z-10 flex items-center justify-center rounded-2xl bg-black/95 p-4 md:p-10"
+                  role="dialog"
+                  aria-modal="true"
+                  aria-label={`${property.title} image preview`}
+                  onClick={() => setMaximizedImage(null)}
+                >
+                  <button
+                    onClick={() => setMaximizedImage(null)}
+                    className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-slate-900 shadow-lg transition hover:bg-amber-400 md:right-8 md:top-8"
+                    aria-label="Close image preview"
+                  >
+                    <X size={24} />
+                  </button>
+
+                  <img
+                    src={maximizedImage}
+                    alt={property.title}
+                    className="max-h-full max-w-full object-contain"
+                    onClick={(event) => event.stopPropagation()}
+                  />
+                </div>
+              )}
 
             </div>
           </div>
@@ -314,7 +354,6 @@ export default function PropertyDetail({
 
         </div>
       </div>
-
 
     </div>
   );
