@@ -121,7 +121,19 @@ Payment plan, full amenity list, and unit availability are still being confirmed
         },
       ],
     },
-    amenities: [],
+    amenities: [
+      { key: "Ground-Level Swimming Pool", icon: Waves },
+      { key: "Heated Rooftop Swimming Pool", icon: Waves },
+      { key: "Gym - Block A", icon: Dumbbell },
+      { key: "Shared Gym - Blocks B & C", icon: Dumbbell },
+      { key: "Rooftop Running Track", icon: HeartPulse },
+      { key: "Rooftop Terrace Lounge", icon: Building2 },
+      { key: "Rooftop Barbecue Area", icon: CookingPot },
+      { key: "Common Kitchen", icon: CookingPot },
+      { key: "Children's Play Area", icon: Baby },
+      { key: "Games & Billiards Room", icon: Gamepad2 },
+      { key: "Landscaped Gardens", icon: Trees },
+    ],
   },
   {
     id: 2,
@@ -209,7 +221,16 @@ This is a hotel-managed investment development — units are positioned for hote
     //   },
     // ],
     },
-    amenities: [],
+    amenities: [
+      { key: "Heated Swimming Pool", icon: Waves },
+      { key: "On-Site Restaurant", icon: CookingPot },
+      { key: "Fitted Gym", icon: Dumbbell },
+      { key: "Steam & Sauna Areas", icon: Sparkles },
+      { key: "Dedicated Lounge Area", icon: Building2 },
+      { key: "High-Speed Lifts", icon: Building2 },
+      { key: "Backup Generator", icon: Zap },
+      { key: "Professional Concierge & Reception", icon: DoorOpen },
+    ],
   },
   {
     id: 4,
@@ -455,12 +476,22 @@ All ensuite bedrooms, laundry area, solar water heating, dining and lounge area,
 
 Available in 195, 204, 252, and 380 sqm layouts, priced from KES 25.48M to KES 43.38M.
 
-Spacious 4 Bedroom Maisonette (204 sqm) — Instalment Plan: KES 26,000,000 | Mortgage Option: KES 28,000,000
-Modern 4 Bedroom Bungalow (195 sqm) — Instalment Plan: KES 25,500,000 | Mortgage Option: KES 27,000,000
-Luxury 4 Bedroom Villa (252 sqm) — Instalment Plan: KES 30,500,000 | Mortgage Option: KES 32,000,000
-Exclusive 4 Bedroom Super Villa (380 sqm) — Instalment Plan: KES 43,400,000 | Mortgage Option: KES 45,000,000
+Spacious 4 Bedroom Maisonette (204 sqm)
 
-Payment plan and rental estimates for the base range are still pending confirmation from the developer.`,
+Instalment Plan: KES 26,000,000 | Mortgage Option: KES 28,000,000
+
+Modern 4 Bedroom Bungalow (195 sqm)
+
+Instalment Plan: KES 25,500,000 | Mortgage Option: KES 27,000,000
+
+Luxury 4 Bedroom Villa (252 sqm)
+
+Instalment Plan: KES 30,500,000 | Mortgage Option: KES 32,000,000
+
+Exclusive 4 Bedroom Super Villa (380 sqm)
+
+Instalment Plan: KES 43,400,000 | Mortgage Option: KES 45,000,000
+`,
       images: [l0, l1, l2, l3, l4],
       // floorPlans: [
       //   {
