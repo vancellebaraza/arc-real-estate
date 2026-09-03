@@ -365,9 +365,7 @@ Exclusive 4 Bedroom Standalone Maisonettes
 
 68 units total, each all-ensuite, on a 50 x 100 plot. Priced at KES 16,000,000, with estimated rental income of KES 60,000 – 85,000 per month.
 
-Property Features: 4 Bedroom Standalone Maisonette – All Ensuite. Situated on a 50 x 100 Plot. Commercial area on site. In-house gym facility. Backup water supply and security.
-
-Completion status, payment plan, and exact remaining unit count are still pending from the developer.`,
+Property Features: 4 Bedroom Standalone Maisonette – All Ensuite. Situated on a 50 x 100 Plot. Commercial area on site. In-house gym facility. Backup water supply and security.`,
       images: [ p1, p2, p3],
       // floorPlans: [
       //   {
@@ -545,8 +543,7 @@ Studio Apartments
 3 Bedroom Apartments
 
 97.74 – 123.54 sqm, priced from KES 7M to KES 8.5M. Estimated rental income of KES 70,000 – 100,000 per month.
-
-Completion date, exact payment plan, and per-unit availability are still pending from the developer.`,
+`,
       images: [mhExterior, mh1, mh2, mh3],
       floorPlans: [
         {
