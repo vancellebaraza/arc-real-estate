@@ -42,10 +42,10 @@ import l2 from "../assets/LUKENYA/img3.jpeg";
 import l3 from "../assets/LUKENYA/img4.jpeg";
 import l4 from "../assets/LUKENYA/img5.jpeg";
 
-import mh0 from "../assets/MANGOHAVEN/img1.jpeg";
 import mh1 from "../assets/MANGOHAVEN/img2.jpeg";
 import mh2 from "../assets/MANGOHAVEN/img3.jpeg";
 import mh3 from "../assets/MANGOHAVEN/img4.jpeg";
+import mhExterior from "../assets/MANGOHAVEN/Screenshot 2026-09-03 205232.png";
 import mhFloorPlan1 from "../assets/MANGOHAVEN/ChatGPT Image Sep 2, 2026, 05_58_03 PM.png";
 import mhFloorPlan2 from "../assets/MANGOHAVEN/imagee2.png";
 
@@ -524,7 +524,7 @@ Instalment Plan: KES 43,400,000 | Mortgage Option: KES 45,000,000
     shortDesc:
       "Mango Tree Residence in Syokimau — studio to 3-bedroom apartments from KES 3.5M, currently ongoing across 1,200 units.",
     price: "FROM KES 3,500,000",
-    image: mh0,
+    image: mhExterior,
     detail: {
       desc:`Mango Tree Residence — Syokimau
 
@@ -547,7 +547,7 @@ Studio Apartments
 97.74 – 123.54 sqm, priced from KES 7M to KES 8.5M. Estimated rental income of KES 70,000 – 100,000 per month.
 
 Completion date, exact payment plan, and per-unit availability are still pending from the developer.`,
-      images: [mh0, mh1, mh2, mh3],
+      images: [mhExterior, mh1, mh2, mh3],
       floorPlans: [
         {
           name: "2 Bedroom Apartment",
