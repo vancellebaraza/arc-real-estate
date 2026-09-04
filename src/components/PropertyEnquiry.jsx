@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+import { openWhatsApp } from "../lib/whatsapp";
 
 const fieldClass =
   "w-full rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder-white/40 outline-none transition focus:border-amber-400 focus:bg-white/15";
@@ -93,10 +94,19 @@ export default function PropertyEnquiry({ property, isActive, onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // NOTE: same as the main Contact form — this only flips local UI state.
-    // It does not send the enquiry anywhere yet. Wire this to a real
-    // endpoint (API route, Supabase insert, email service, etc.) before
-    // this goes live, otherwise every enquiry submitted here is lost.
+    const message = [
+      "Hello ARK Real Estates, I would like to enquire about:",
+      `Property: ${property.title}`,
+      `Name: ${form.firstName} ${form.surname}`,
+      `Phone: ${form.phone}`,
+      `Email: ${form.email}`,
+      `Preferred unit: ${form.unitType}`,
+      `Budget: ${form.budget}`,
+      `Decision maker: ${form.decisionMaker}`,
+      `Purchase timeline: ${form.timeline}`,
+    ].join("\n");
+
+    openWhatsApp(message);
     setSubmitted(true);
   };
 
@@ -289,7 +299,7 @@ export default function PropertyEnquiry({ property, isActive, onClose }) {
                   type="submit"
                   className="rounded-full bg-amber-500 px-14 py-3 font-semibold text-slate-900 shadow-lg transition hover:scale-105 hover:bg-amber-400"
                 >
-                  Submit Enquiry
+                  Continue on WhatsApp
                 </button>
               </div>
             </form>

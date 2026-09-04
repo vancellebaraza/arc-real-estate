@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { openWhatsApp } from "../lib/whatsapp";
 
 const inputStyle = {
   background: "rgba(255,255,255,0.04)",
@@ -15,10 +16,14 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // NOTE: this only flips local UI state — it does not send the enquiry
-    // anywhere yet. Wire this up to a real endpoint (e.g. an API route,
-    // Supabase insert, or email service) before this goes live, otherwise
-    // every enquiry submitted on the site is silently lost.
+    const message = [
+      "Hello ARK Real Estates, I have a general enquiry.",
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Message: ${form.message}`,
+    ].join("\n");
+
+    openWhatsApp(message);
     setSubmitted(true);
   };
 
@@ -122,7 +127,7 @@ export default function Contact() {
                   background: "transparent",
                 }}
               >
-                Send Enquiry
+                Continue on WhatsApp
               </button>
             </div>
           </form>
