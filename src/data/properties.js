@@ -49,6 +49,10 @@ import mhExterior from "../assets/MANGOHAVEN/Screenshot 2026-09-03 205232.png";
 import mhFloorPlan1 from "../assets/MANGOHAVEN/ChatGPT Image Sep 2, 2026, 05_58_03 PM.png";
 import mhFloorPlan2 from "../assets/MANGOHAVEN/imagee2.png";
 
+
+import rs1 from "../assets/ROCKSAND/rocksand.jpeg";
+import rs2 from "../assets/ROCKSAND/rocksand2.png";
+
 import {
   Dumbbell,
   Waves,
@@ -564,6 +568,46 @@ Studio Apartments
   { key: "Swimming Pool", icon: Waves },
   { key: "CCTV", icon: Video },
   { key: "Intercom", icon: DoorOpen },
+],
+  },
+    {
+    id: 10,
+    title: "ROCKSAND Homes",
+    location: "Kitengela",
+    bedrooms: "3BR",
+    area: "Sizes pending confirmation",
+    bathrooms: "1",
+    shortDesc:
+      "Discover the opportunity to own a modern home in Plainsview Kitengela, a thoughtfully planned residential development offering comfort, security, and excellent investment value",
+    price: "From Ksh 6,000,000",
+    image: rs1,
+    detail: {
+      desc:`Plainsview Kitengela – Modern 3 Bedroom All Ensuite Homes for Sale | Phase III Now Selling
+
+Discover the opportunity to own a modern home in Plainsview Kitengela, a thoughtfully planned residential development offering comfort, security, and excellent investment value. Following the successful completion and sell-out of Phase I and Phase II, Phase III is now on sale with only 28 units available, offering buyers a chance to secure a home in this growing and highly sought-after location.
+
+These elegant 3-bedroom all ensuite homes in Kitengela Kimalat are designed for modern family living, featuring spacious layouts, quality finishes, and a secure environment. Each unit sits on a generous 62 sqm plot, offering a practical and comfortable home setup ideal for families and investors looking for affordable property ownership with strong appreciation potential.
+
+Project Features:
+
+✓ Modern 3 Bedroom Homes – All Ensuite ✓ Spacious and Functional Layouts ✓ Cabro-Paved Access Roads ✓ Electric Fence for Enhanced Security ✓ Dedicated Security Guards ✓ Well-Planned Residential Community ✓ Construction Ongoing    |    Selling Price: KES 5,500,000      |      Estimated Rental Income: KES 30,000 – KES 45,000 per month`,
+      images: [rs1, rs2],
+    //       floorPlans: [
+    //   {
+    //     name: "Studio Apartment",
+    //     image: cantoFloor1,
+    //   },
+    //   {
+    //     name: "1 Bedroom Apartment",
+    //     image: cantoFloor2,
+    //   },
+    //   {
+    //     name: "Typical Floor Plan",
+    //     image: cantoFloor3,
+    //   },
+    // ],
+    },
+    amenities: [
 ],
   },
 ];
