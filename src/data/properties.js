@@ -575,7 +575,7 @@ Studio Apartments
     title: "ROCKSAND Homes",
     location: "Kitengela",
     bedrooms: "3BR",
-    area: "Sizes pending confirmation",
+    area: "Size pending confirmation",
     bathrooms: "1",
     shortDesc:
       "Discover the opportunity to own a modern home in Plainsview Kitengela, a thoughtfully planned residential development offering comfort, security, and excellent investment value",
