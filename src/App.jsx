@@ -36,7 +36,7 @@ export default function App() {
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, []);
+  }, [properties]);
 
   useEffect(() => {
     document.body.style.overflow =
