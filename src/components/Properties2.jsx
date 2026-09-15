@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Search, MapPin, BedDouble, Bath, Square } from "lucide-react";
+import { Search } from "lucide-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useProperties } from "../hooks/useProperties";
 import PropertyCard from "./PropertyCard";
 import PropertyDetail from "./PropertyDetail";
 import PropertyEnquiry from "./PropertyEnquiry";
+import SEO, { SITE_URL } from "./SEO";
 
 export default function PropertiesPage() {
   const { properties } = useProperties();
@@ -21,12 +22,27 @@ export default function PropertiesPage() {
   return (
     <main className="bg-stone-50 min-h-screen">
       <Navbar />
+      <SEO
+        title="Properties for Sale in Nairobi | ARK Real Estate"
+        description="Browse premium apartments, homes and investment properties for sale in Nairobi and across Kenya with ARK Real Estate."
+        path="/properties"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": `${SITE_URL}/properties#webpage`,
+          name: "Properties for Sale in Nairobi",
+          url: `${SITE_URL}/properties`,
+          isPartOf: { "@id": `${SITE_URL}/#website` },
+        }}
+      />
 
       <section className="relative h-[55vh] overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1629236714859-3a1ec2d8f6c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Properties"
           className="absolute inset-0 h-full w-full object-cover"
+          width="1920"
+          height="1080"
         />
 
         <div className="absolute inset-0 bg-black/60" />

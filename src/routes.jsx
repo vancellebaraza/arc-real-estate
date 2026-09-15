@@ -8,6 +8,7 @@ import WhatsAppButton from "./components/whatsappbutton";
 import AdminLogin from "./components/admin/AdminLogin";
 import AdminDashboard from "./components/admin/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import SEO from "./components/SEO";
 
 export default function AppRoutes() {
   return (
@@ -30,11 +31,18 @@ export default function AppRoutes() {
         <Route
           path="*"
           element={
-            <div className="flex min-h-screen items-center justify-center">
-              <h1 className="text-4xl font-bold">
-                404 - Page Not Found
-              </h1>
-            </div>
+            <>
+              <SEO
+                title="Page Not Found | ARK Real Estate"
+                description="The requested ARK Real Estate page could not be found."
+                noindex
+              />
+              <div className="flex min-h-screen items-center justify-center">
+                <h1 className="text-4xl font-bold">
+                  404 - Page Not Found
+                </h1>
+              </div>
+            </>
           }
         />
       </Routes>

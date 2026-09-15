@@ -5,9 +5,6 @@ import {
   Mail,
   MapPin,
   Clock,
-  ShieldCheck,
-  Headphones,
-  Building2,
 } from "lucide-react";
 import {
   FaFacebookF,
@@ -16,6 +13,7 @@ import {
   FaXTwitter,
   FaWhatsapp,
 } from "react-icons/fa6";
+import SEO, { SITE_URL } from "./SEO";
 
 const CONTACT_IMAGE =
   "/Ark real estates1.png";
@@ -24,13 +22,29 @@ export default function Contact() {
   return (
     <>
       <Navbar />
+      <SEO
+        title="Contact ARK Real Estate | Nairobi Property Consultants"
+        description="Contact ARK Real Estate in Nairobi for property buying, selling, renting and investment guidance from our team at Warwick Centre, Gigiri."
+        path="/contact"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "@id": `${SITE_URL}/contact#webpage`,
+          name: "Contact ARK Real Estate",
+          url: `${SITE_URL}/contact`,
+          about: { "@id": `${SITE_URL}/#business` },
+        }}
+      />
+      <main>
 
       {/* Hero */}
       <section className="relative h-[55vh] overflow-hidden">
         <img
           src={CONTACT_IMAGE}
-          alt="Fusion Pro Real Estates"
+          alt="ARK Real Estate office in Nairobi"
           className="absolute inset-0 h-full w-full object-cover"
+          width="1920"
+          height="1080"
         />
 
         <div className="absolute inset-0 bg-black/55" />
@@ -329,6 +343,7 @@ export default function Contact() {
 
 
 
+      </main>
       <Footer />
     </>
   );

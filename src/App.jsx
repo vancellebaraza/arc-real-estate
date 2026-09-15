@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import PropertyDetail from "./components/PropertyDetail";
 import PropertyEnquiry from "./components/PropertyEnquiry";
 import { useProperties } from "./hooks/useProperties";
+import SEO, { SITE_URL, DEFAULT_IMAGE } from "./components/SEO";
 
 export default function App() {
   const { properties } = useProperties();
@@ -46,6 +47,22 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <SEO
+        title="ARK Real Estate | Premium Properties in Nairobi"
+        description="ARK Real Estate helps you buy, rent and invest in premium apartments, homes and property opportunities in Nairobi and across Kenya, with expert local guidance."
+        path="/"
+        image={DEFAULT_IMAGE}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": `${SITE_URL}/#webpage`,
+          name: "ARK Real Estate | Premium Properties in Nairobi",
+          url: `${SITE_URL}/`,
+          isPartOf: { "@id": `${SITE_URL}/#website` },
+          about: { "@id": `${SITE_URL}/#business` },
+        }}
+      />
+      <main>
       <Hero properties={properties}/>
 
       <div className="w-full h-24 section-transition" />
@@ -68,6 +85,7 @@ export default function App() {
       <div className="w-full h-32 section-transition-dark" />
 
       <Contact />
+      </main>
       <Footer />
 
       {properties.map((property, idx) => (

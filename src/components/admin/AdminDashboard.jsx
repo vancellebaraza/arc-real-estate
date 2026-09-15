@@ -3,6 +3,7 @@ import { Trash2, LogOut } from "lucide-react";
 import { supabase } from "../../lib/supabase";
 import { useAuth } from "../../context/AuthContext";
 import PropertyForm from "./PropertyForm";
+import SEO from "../SEO";
 
 export default function AdminDashboard() {
   const { user, signOut } = useAuth();
@@ -38,7 +39,14 @@ export default function AdminDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-stone-50 px-6 py-10">
+    <>
+      <SEO
+        title="Admin Dashboard | ARK Real Estate"
+        description="Private ARK Real Estate administration dashboard."
+        path="/admin"
+        noindex
+      />
+      <div className="min-h-screen bg-stone-50 px-6 py-10">
       <div className="mx-auto max-w-5xl">
         <div className="mb-8 flex items-center justify-between">
           <div>
@@ -105,6 +113,7 @@ export default function AdminDashboard() {
           )}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

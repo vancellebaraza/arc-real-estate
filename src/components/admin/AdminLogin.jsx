@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { useAuth } from "../../context/AuthContext";
+import SEO from "../SEO";
 
 export default function AdminLogin() {
   const { signIn } = useAuth();
@@ -30,7 +31,14 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-stone-50 px-6">
+    <>
+      <SEO
+        title="Admin Login | ARK Real Estate"
+        description="Private ARK Real Estate administration login."
+        path="/admin/login"
+        noindex
+      />
+      <div className="flex min-h-screen items-center justify-center bg-stone-50 px-6">
       <div className="w-full max-w-sm">
         <Link
           to="/"
@@ -86,6 +94,7 @@ export default function AdminLogin() {
         </form>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

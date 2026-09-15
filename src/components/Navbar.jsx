@@ -14,8 +14,9 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav
-      className="fixed top-0 left-0 w-full z-50 backdrop-blur-md"
+    <header>
+      <nav
+        className="fixed top-0 left-0 w-full z-50 backdrop-blur-md"
       style={{
         background: "rgba(252,250,247,0.92)",
         borderBottom: "1px solid rgba(184,148,95,0.2)",
@@ -30,12 +31,12 @@ export default function Navbar() {
     className="h-18 w-auto object-contain transition-transform duration-300 hover:scale-105"
   />
 
-  <h1
+  <div
     className="font-display text-2xl font-semibold tracking-wide"
     style={{ color: "var(--charcoal)" }}
   >
     ARK Real Estate
-  </h1>
+  </div>
 </div>
         <div className="hidden md:flex gap-10">
 <div className="hidden md:flex gap-10">
@@ -120,6 +121,7 @@ to="/about" className="nav-link">About</Link>
     </a>
   </div>
 )}
-    </nav>
+      </nav>
+    </header>
   );
 }

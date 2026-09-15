@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import SEO, { SITE_URL } from "./SEO";
 
 export default function About() {
     const fadeUp = {
@@ -61,12 +62,27 @@ const stagger = {
   return (
     <main className="bg-stone-50">
         <Navbar />
+      <SEO
+        title="About ARK Real Estate | Property Experts in Kenya"
+        description="Learn how ARK Real Estate helps clients buy, sell and invest in quality property across Nairobi and Kenya with professional guidance."
+        path="/about"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "@id": `${SITE_URL}/about#webpage`,
+          name: "About ARK Real Estate",
+          url: `${SITE_URL}/about`,
+          about: { "@id": `${SITE_URL}/#business` },
+        }}
+      />
       {/* Hero */}
       <section className="relative h-[70vh]">
         <img
           src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Luxury Real Estate"
           className="absolute inset-0 h-full w-full object-cover"
+          width="1920"
+          height="1080"
         />
 
         <div className="absolute inset-0 bg-black/55" />
@@ -126,6 +142,8 @@ const stagger = {
               src="https://images.pexels.com/photos/7578860/pexels-photo-7578860.jpeg?auto=compress&cs=tinysrgb&w=1200"
               alt="Office"
               className="rounded-3xl shadow-xl"
+              width="1200"
+              height="800"
             />
           </div>
           </motion.div>

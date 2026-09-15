@@ -20,6 +20,8 @@ export default function About() {
             alt="Real Ark Estate office"
             className="w-full h-96 object-cover rounded-sm"
             loading="lazy"
+            width="1200"
+            height="800"
           />
         </div>
 

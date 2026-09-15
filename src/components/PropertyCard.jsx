@@ -18,9 +18,11 @@ export default function PropertyCard({ property, onClick, onEnquire }) {
       <div className="overflow-hidden">
         <img
           src={property.image}
-          alt={property.title}
+          alt={`${property.title} in ${property.location}`}
           className="h-72 w-full object-cover transition duration-700 group-hover:scale-110"
           loading="lazy"
+          width="1200"
+          height="800"
         />
       </div>
 

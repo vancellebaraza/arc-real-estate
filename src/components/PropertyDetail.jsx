@@ -50,8 +50,11 @@ export default function PropertyDetail({
 
           <img
             src={activeImage}
-            alt={property.title}
+            alt={`${property.title} in ${property.location}`}
             className="h-full w-full object-cover"
+            loading="eager"
+            width="1920"
+            height="1080"
           />
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
@@ -276,8 +279,9 @@ export default function PropertyDetail({
                         <div className="flex items-center justify-center bg-white p-6">
                           <img
                             src={plan.image}
-                            alt={`${plan.name} floor plan`}
+                            alt={`${property.title} ${plan.name} floor plan`}
                             className="h-auto max-h-[600px] w-full object-contain"
+                            loading="lazy"
                           />
                         </div>
                       </div>
@@ -301,7 +305,7 @@ export default function PropertyDetail({
                 <img
                   key={image}
                   src={image}
-                  alt={property.title}
+                  alt={`${property.title} in ${property.location}`}
                   onClick={() => {
                     setActiveImage(image);
                     setMaximizedImage(image);
@@ -311,6 +315,9 @@ export default function PropertyDetail({
                       ? "ring-4 ring-amber-500"
                       : ""
                   }`}
+                    loading="lazy"
+                    width="1200"
+                    height="800"
                 />
               ))}
 
@@ -332,7 +339,7 @@ export default function PropertyDetail({
 
                   <img
                     src={maximizedImage}
-                    alt={property.title}
+                    alt={`${property.title} in ${property.location}`}
                     className="max-h-full max-w-full object-contain"
                     onClick={(event) => event.stopPropagation()}
                   />

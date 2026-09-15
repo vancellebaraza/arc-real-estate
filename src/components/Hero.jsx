@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import hero1 from "../assets/hero1.jpeg";
-import hero2 from "../assets/hero2.jpeg";
 import hero3 from "../assets/hero3.jpeg";
 import hero4 from "../assets/hero4.png";
 import img1 from "../assets/MARAGROOVE/img1.jpeg";
@@ -99,6 +98,10 @@ export default function Hero() {
           src={slide.image}
           alt={slide.title}
           className="h-full w-full object-cover"
+          loading={index === 0 ? "eager" : "lazy"}
+          fetchPriority={index === 0 ? "high" : "auto"}
+          width="1920"
+          height="1080"
         />
       </div>
     ))}
@@ -115,9 +118,9 @@ export default function Hero() {
 >
   <div className="gold-line mb-6" />
 
-  <h2 className=" max-w-4xl text-4xl font-light text-white md:text-6xl lg:text-7xl">
+  <h1 className=" max-w-4xl text-4xl font-light text-white md:text-6xl lg:text-7xl">
     {slides[current].title}
-  </h2>
+  </h1>
 
   <p className=" mt-6 max-w-2xl text-lg text-white/80">
     {slides[current].description}
